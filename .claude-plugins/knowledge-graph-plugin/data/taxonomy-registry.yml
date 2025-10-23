@@ -1,0 +1,407 @@
+version: 0.1.0
+generated: '2025-10-13 22:13:03'
+statistics:
+  unique_tags: 100
+  total_instances: 246
+  files_analyzed: 71
+tags:
+  foundation:
+    frequency: 6
+    status: active
+    notes: Auto-discovered during baseline scan
+  brand:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  voice:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  style:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  execution-standards:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  messaging:
+    frequency: 3
+    status: active
+    notes: Auto-discovered during baseline scan
+  operational:
+    frequency: 3
+    status: active
+    notes: Auto-discovered during baseline scan
+  navigation:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  ai-agent-guide:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  workflow:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  market:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  competitive:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  customer-intelligence:
+    frequency: 52
+    status: active
+    notes: Auto-discovered during baseline scan
+  positioning:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  category-creation:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  personas:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  buyer-intelligence:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  sales:
+    frequency: 3
+    status: active
+    notes: Auto-discovered during baseline scan
+  knowledge-graph:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  linking-strategy:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  documentation:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  taxonomy:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  call-summaries:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  sales-pipeline:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  meddpicc:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  vertical-analysis:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  market-segmentation:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  pattern-analysis:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  sales-insights:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  executive-summary:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  objection-handling:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  competitive-intelligence:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  pain-points:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  ciso-concerns:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  appsec-challenges:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  buyer-personas:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  customer:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  call-transcript:
+    frequency: 47
+    status: active
+    notes: Auto-discovered during baseline scan
+  template:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  example:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  partner-channel:
+    frequency: 4
+    status: active
+    notes: Auto-discovered during baseline scan
+  qualified-opportunity:
+    frequency: 5
+    status: active
+    notes: Auto-discovered during baseline scan
+  investor-relations:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  analyst-relations:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  middle-east:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  early-stage:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  ecosystem:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  pov-customer:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  executive-intro:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  customer-onboarding:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  existing-relationship:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  incomplete-data:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  strategic-feedback:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  executive-deep-dive:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  partner-relations:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  financial-services:
+    frequency: 3
+    status: active
+    notes: Auto-discovered during baseline scan
+  japan-market:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  design-partner:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  japan:
+    frequency: 3
+    status: active
+    notes: Auto-discovered during baseline scan
+  customer-relationship:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  advisor-engagement:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  poc-planning:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  partner-network:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  content:
+    frequency: 8
+    status: active
+    notes: Auto-discovered during baseline scan
+  campaign:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  battlecards:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  value-props:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  content-strategy:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  seo:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  faq-content:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  pillar-page:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  remediation-layer:
+    frequency: 4
+    status: active
+    notes: Auto-discovered during baseline scan
+  category-leadership:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  marketing:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  tactical:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  keyword-research:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  product-launch:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  sca:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  beta-launch:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  google-ads:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  ad-copy:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  compliance:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  cta-optimization:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  b2b-best-practices:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  creator-partnerships:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  roi-analysis:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  tofu:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  brand-value:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  demand-generation:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  faq:
+    frequency: 3
+    status: active
+    notes: Auto-discovered during baseline scan
+  technical-documentation:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  seo-strategy:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  pillar-page-planning:
+    frequency: 2
+    status: active
+    notes: Auto-discovered during baseline scan
+  conversion-optimization:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  sales-enablement:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  sdr:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  outreach:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  video-strategy:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  visual-assets:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan
+  product-marketing:
+    frequency: 1
+    status: active
+    notes: Auto-discovered during baseline scan

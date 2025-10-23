@@ -1,0 +1,14 @@
+{
+  "name": "nickel-plugins",
+  "description": "Internal Claude Code plugins for nickel GTM operations and knowledge management",
+  "owner": {
+    "name": "nickel GTM Team"
+  },
+  "plugins": [
+    {
+      "name": "knowledge-graph",
+      "source": "./knowledge-graph-plugin",
+      "description": "Taxonomy management and knowledge graph governance for FOAM-based systems"
+    }
+  ]
+}

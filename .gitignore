@@ -1,0 +1,60 @@
+# Research and temporary files
+.research/
+temp_extract/
+*.zip
+*temp*
+extract_docx.py
+
+# Data files
+*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude settings
+.claude/settings.local.json
+.claude/
+
+# Git repositories
+.git/
+**/.git/
+*.git
+
+# Nested Pipedream workflows repo
+06_apps/workflows/pipedream_ai_generated_workflows/
+
+# Python virtual environments
+.venv/
+venv/
+
+# HubSpot config file
+hubspot.config.yml
