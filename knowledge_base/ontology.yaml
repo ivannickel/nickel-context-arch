@@ -1,0 +1,145 @@
+version: 1.0.0
+generated: 2025-10-24
+description: "Universal ontology for Nickel GTM knowledge graph"
+
+node_types:
+  - name: foundation
+    description: "Strategic anchor documents (ICP, positioning, methodology)"
+    domains: [foundation]
+    required_fields:
+      - name
+      - description
+      - domain
+      - node_type
+      - status
+      - last_updated
+
+  - name: transcript
+    description: "Sales call transcripts with extracted patterns"
+    domains: [customer]
+    required_fields:
+      - name
+      - description
+      - domain
+      - node_type
+      - status
+      - last_updated
+      - meeting_date
+      - participants
+      - pain_points_mentioned
+      - objections_raised
+      - use_cases_discussed
+      - outcome
+
+  - name: pattern
+    description: "Emergent patterns (pain points, objections, personas, use cases)"
+    domains: [customer, market]
+    required_fields:
+      - name
+      - description
+      - domain
+      - node_type
+      - status
+      - last_updated
+      - discovered_date
+      - frequency
+      - confidence
+
+  - name: synthesis
+    description: "High-level synthesis documents that aggregate patterns"
+    domains: [customer, content, market, foundation]
+    required_fields:
+      - name
+      - description
+      - domain
+      - node_type
+      - status
+      - last_updated
+      - aggregates
+
+  - name: competitor_analysis
+    description: "Competitive intelligence documents"
+    domains: [market]
+    required_fields:
+      - name
+      - description
+      - domain
+      - node_type
+      - status
+      - last_updated
+      - competitor
+
+relationship_types:
+  - name: mentions
+    description: "Transcript mentions a pattern (pain point, objection, etc.)"
+    source: transcript
+    target: pattern
+
+  - name: validates
+    description: "Multiple sources validate a pattern"
+    source: transcript
+    target: pattern
+
+  - name: relates_to
+    description: "General relationship between documents"
+    source: any
+    target: any
+
+  - name: aggregates
+    description: "Synthesis document aggregates multiple patterns"
+    source: synthesis
+    target: [pattern, transcript]
+
+  - name: competes_with
+    description: "Competitive relationship"
+    source: foundation
+    target: competitor_analysis
+
+domain_structure:
+  foundation:
+    description: "Strategic anchor - ICP, positioning, methodology"
+    node_types: [foundation]
+    directories: ["00_foundation/"]
+
+  customer:
+    description: "Customer intelligence - transcripts, pain points, personas"
+    node_types: [transcript, pattern, synthesis]
+    directories:
+      - "01_customer/transcripts/"
+      - "01_customer/pain_points/"
+      - "01_customer/objections/"
+      - "01_customer/personas/"
+      - "01_customer/use_cases/"
+      - "01_customer/_synthesis/"
+
+  content:
+    description: "Content strategy and execution"
+    node_types: [synthesis]
+    directories:
+      - "02_content/_synthesis/"
+
+  market:
+    description: "Market intelligence and competitive analysis"
+    node_types: [pattern, synthesis, competitor_analysis]
+    directories:
+      - "03_market/competitor_analysis/"
+      - "03_market/_synthesis/"
+
+validation_rules:
+  domain_tag_compliance:
+    rule: "First tag must match domain"
+    required: true
+
+  linking_compliance:
+    rule: "Minimum 3 related_docs per document"
+    required: true
+    exceptions: [foundation]
+
+  evidence_preservation:
+    rule: "Pattern documents must cite source transcripts with quotes"
+    required: true
+    applies_to: [pattern]
+
+  status_progression:
+    valid_statuses: [seed, emergent, validated, stable]
+    progression: "seed → emergent → validated → stable"
