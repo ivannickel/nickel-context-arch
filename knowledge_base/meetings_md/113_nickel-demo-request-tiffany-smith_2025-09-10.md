@@ -9,6 +9,22 @@ participants:
 - Tiffany Smith <tiffany.smith@alliancehomecare.com>
 source: Circleback
 meeting_number: 113
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: advanced
+customer_segment: whale
+has_pain_points: true
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: hospitality
+transaction_volume: 1
+ar_vs_ap: ar
+processed: false
+dimensional_extracted: false
+extraction_priority: demo
 ---
 
 Christian Sheerer: And straight from you, what made you want to spend your morning talking with a salesperson?

@@ -1,3 +1,26 @@
+---
+document_type: meeting_note
+date: 2025-10-30
+author: Ivan LaBianca
+source: internal_doc
+
+topics:
+  - marketing_channels
+  - product_strategy
+  - icp_definition
+
+signal_strength: high
+
+contains_icp: true
+contains_metrics: false
+contains_competitive: true
+contains_customer_evidence: false
+
+file_size: 4.1K
+processed: false
+lens_extracted: false
+---
+
 # Nickel + Daydream |  Strategy Session
 
 ---

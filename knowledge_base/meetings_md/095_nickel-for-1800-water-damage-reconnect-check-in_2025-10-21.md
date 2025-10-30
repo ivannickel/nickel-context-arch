@@ -10,6 +10,21 @@ participants:
 - iPhone (2) <null>
 source: Circleback
 meeting_number: 95
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: follow_up
+deal_stage: active
+customer_segment: unknown
+has_pain_points: true
+has_objections: false
+has_competitive_intel: false
+has_use_case: false
+has_pricing_discussion: true
+primary_industry: construction
+transaction_volume: unknown
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: low
 ---
 
 iPhone (2): Hello?

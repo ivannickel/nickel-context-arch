@@ -10,6 +10,22 @@ participants:
 - Wildcat Dee <dee@wildcatstriping.com>
 source: Circleback
 meeting_number: 12
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: false
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: other
+transaction_volume: unknown
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Colton O'Farrell: Hey, Zak.

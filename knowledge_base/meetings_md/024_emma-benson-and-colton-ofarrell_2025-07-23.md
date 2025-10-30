@@ -10,6 +10,22 @@ participants:
 - Emma Coppieters <null>
 source: Circleback
 meeting_number: 24
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: whale
+has_pain_points: true
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: construction
+transaction_volume: above_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Colton O'Farrell: . . . . . . . . . Hey, Emma. Hey.

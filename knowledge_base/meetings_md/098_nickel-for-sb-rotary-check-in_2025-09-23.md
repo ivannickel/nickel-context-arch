@@ -14,6 +14,22 @@ participants:
 - Nickel's AskElephant Notetaker <null>
 source: Circleback
 meeting_number: 98
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: review
+deal_stage: discovery
+customer_segment: unknown
+has_pain_points: false
+has_objections: true
+has_competitive_intel: false
+has_use_case: false
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: unknown
+ar_vs_ap: unclear
+processed: false
+dimensional_extracted: false
+extraction_priority: low
 ---
 
 Jim Lisi: Hey, I am here. Cool.

@@ -15,6 +15,22 @@ participants:
 - read.ai meeting notes <null>
 source: Circleback
 meeting_number: 112
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: early
+customer_segment: fish
+has_pain_points: true
+has_objections: true
+has_competitive_intel: false
+has_use_case: false
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: other
+transaction_volume: unknown
+ar_vs_ap: unclear
+processed: false
+dimensional_extracted: false
+extraction_priority: poor
 ---
 
 John Macari: John.

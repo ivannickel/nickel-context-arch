@@ -10,6 +10,25 @@ participants:
 - Richard Melrose <richard@ecogate.com>
 source: Circleback
 meeting_number: 40
+extraction_priority: medium
+extraction_priority: medium
+extraction_priority: medium
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: discovery
+deal_stage: discovery
+customer_segment: fish
+has_pain_points: true
+has_objections: true
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: manufacturing
+transaction_volume: near_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Colton O'Farrell: What up? Oh, hey, Christian. Should we tag team or. Or do you. Are you. You think you have time? I think we should be able to. To get through everything, but in the case that I need to. Oh, in the case. Yeah, in case we go over. Okay, so honestly, I'll just chill here and, I mean, I'll pay attention, obviously, but I'll let you. I'll let you lead. Yeah, and if you have good questions to ask, like feel free to chime in or if I'm missing something, so. Gotcha. Looks like he's jumping on.

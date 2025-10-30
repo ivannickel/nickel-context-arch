@@ -1,3 +1,25 @@
+---
+document_type: process_doc
+date: 2025-10-30
+author: Colton O'Farrell
+source: internal_doc
+
+topics:
+  - customer_success
+  - sales_operations
+
+signal_strength: low
+
+contains_icp: true
+contains_metrics: false
+contains_competitive: false
+contains_customer_evidence: false
+
+file_size: 1.8K
+processed: false
+lens_extracted: false
+---
+
 # Draft: SOP: Handling Intercom Inbound for Shrimp Accounts (<$1M Revenue)
 
 Area: ☎️ Support

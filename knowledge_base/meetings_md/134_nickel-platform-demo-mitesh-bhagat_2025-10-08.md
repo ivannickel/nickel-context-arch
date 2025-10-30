@@ -10,6 +10,23 @@ participants:
 - Mitesh Bhagat <mitesh.bhagat@fastsigns.com>
 source: Circleback
 meeting_number: 134
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: general
+deal_stage: discovery
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: false
+has_pricing_discussion: false
+has_integration_needs: false
+primary_industry: other
+transaction_volume: unknown
+ar_vs_ap: unclear
+processed: false
+dimensional_extracted: false
+extraction_priority: low
 ---
 
 Zak George: He's. Hey, Jacob, how's it going?

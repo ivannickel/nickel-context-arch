@@ -9,6 +9,22 @@ participants:
 - Jack Rodosky <jrodosky@archadeck.net>
 source: Circleback
 meeting_number: 141
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: activation
+customer_segment: shrimp
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: construction
+transaction_volume: sub_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Jacob Greenberg: Hey Jack, can you hear me? Hello. Hey there, how's it going? Good,

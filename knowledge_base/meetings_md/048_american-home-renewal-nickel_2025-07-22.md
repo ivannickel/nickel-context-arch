@@ -10,6 +10,25 @@ participants:
 - Marc <marcs@renewal.com>
 source: Circleback
 meeting_number: 48
+extraction_priority: high
+extraction_priority: high
+extraction_priority: high
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: kickoff
+deal_stage: activation
+customer_segment: whale
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: construction
+transaction_volume: above_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Colton O'Farrell: Yeah, it sounds like he said he confirmed it. It's going well, just got off another call. But yeah, we're excited to talk with these guys and test out that first kind of sending of $50.

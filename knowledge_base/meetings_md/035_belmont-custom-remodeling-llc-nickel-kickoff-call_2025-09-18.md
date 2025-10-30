@@ -11,6 +11,25 @@ participants:
 - AskElephant Notetaker <null>
 source: Circleback
 meeting_number: 35
+extraction_priority: medium
+extraction_priority: medium
+extraction_priority: medium
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: kickoff
+deal_stage: activation
+customer_segment: fish
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: construction
+transaction_volume: unknown
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Clinton: Okay, Colton, did you, so how did you send that invite?

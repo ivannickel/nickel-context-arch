@@ -16,6 +16,22 @@ participants:
 - Nickel's Notetaker <null>
 source: Circleback
 meeting_number: 21
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: kickoff
+deal_stage: activation
+customer_segment: shrimp
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: construction
+transaction_volume: sub_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Colton O'Farrell: But that call is generally to review the transactions that you've already completed, make sure everything's working as intended, you're happy with things, and also if there's any kind of product feature improvements or requests that you have. But that all checks out for you.

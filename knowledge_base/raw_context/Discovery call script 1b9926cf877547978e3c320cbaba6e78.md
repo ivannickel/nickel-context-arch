@@ -1,3 +1,24 @@
+---
+document_type: operational_guide
+date: 2025-10-30
+author: Ray Fu
+source: internal_doc
+
+topics:
+  - sales_operations
+
+signal_strength: medium
+
+contains_icp: true
+contains_metrics: false
+contains_competitive: false
+contains_customer_evidence: true
+
+file_size: 2.1K
+processed: false
+lens_extracted: false
+---
+
 # Discovery call script
 
 Area: 🤑 Revenue

@@ -10,6 +10,23 @@ participants:
 - null <jstealey@redwoodtaxconsultants.com>
 source: Circleback
 meeting_number: 56
+extraction_priority: low
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: general
+deal_stage: discovery
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: false
+has_pricing_discussion: false
+has_integration_needs: false
+primary_industry: other
+transaction_volume: unknown
+ar_vs_ap: unclear
+processed: false
+dimensional_extracted: false
+extraction_priority: low
 ---
 
 Zak George: Hey, Christian. What I normally do is I just wait for like three minutes. If he doesn't hop on, I usually just give him a call. But he accepted the invitation, so he's probably should probably show up. Yeah, I agree with both of those things. He didn't mention he didn't, he didn't need to, yeah, I watched the call. It's not for him. It's like he likes looking at it for his clients. Yeah.

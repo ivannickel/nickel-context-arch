@@ -9,6 +9,22 @@ participants:
 - Andrea Kladder <andrea@persevra.com>
 source: Circleback
 meeting_number: 62
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: shrimp
+has_pain_points: true
+has_objections: true
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: accounting
+transaction_volume: unknown
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Christian Sheerer: I have a good attitude about it.

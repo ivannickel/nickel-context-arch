@@ -12,6 +12,25 @@ participants:
 - read.ai meeting notes <null>
 source: Circleback
 meeting_number: 41
+extraction_priority: low
+extraction_priority: low
+extraction_priority: low
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: follow_up
+deal_stage: active
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: false
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: construction
+transaction_volume: unknown
+ar_vs_ap: unclear
+processed: false
+dimensional_extracted: false
+extraction_priority: low
 ---
 
 Jeff Streich: . Hey, Jeff. Hey, Colton. How's it going this week? Hold on one second. No worries. All right, so I wish I had something to tell you, but I've not spoken to my CFO yet. I gotcha. I know that was a big ask. Not a full-time guy. I just want to make sure because I don't want to screw him up, you know? I'm sure I'm gonna do it. I just don't want to screw him up as far as, like, right now he's doing all the course codes to integrate between QuickBooks and. And Procore. Yep. I don't want him to get done with that, which I think is happening. Like, I'm signing up for whatever that other thing is, you know, the integration today. yeah, I think it'll just be, you know, maybe we should talk next week, but. Yeah, no, that's totally fine. I mean, I would love to talk to the CFO, too. Pick his brain if he has any questions for me. You know what? Email me and I'll email. Yeah, I'll put this on a three-way you know? Cool. Yeah. And I'll just move out this call. So we'll do this same call maybe just sometime next week, same time. Perfect. Yeah. Sorry. I'm not trying to waste your time. Oh, no, I totally understand, Jeff. to you And if that you makes want to the just most loop sense. So me let's into him and do then that. we I'll can invite send you that to email. that. That would be perfect. All right, talk to you. Thanks, Bolton. Appreciate it. Have a good weekend. Yeah, thanks.

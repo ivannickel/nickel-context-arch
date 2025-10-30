@@ -1,3 +1,26 @@
+---
+document_type: operational_guide
+date: 2025-09-17
+author: Ivan LaBianca
+source: internal_doc
+
+topics:
+  - icp_definition
+  - team_operations
+  - sales_operations
+
+signal_strength: medium
+
+contains_icp: true
+contains_metrics: false
+contains_competitive: false
+contains_customer_evidence: false
+
+file_size: 3.4K
+processed: false
+lens_extracted: false
+---
+
 # Nickel Industry Classification - Field Reference
 
 Area: 🏢 Company Wide

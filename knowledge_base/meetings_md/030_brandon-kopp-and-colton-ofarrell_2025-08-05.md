@@ -9,6 +9,22 @@ participants:
 - Brandon <brandon@bikoindustries.com>
 source: Circleback
 meeting_number: 30
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: discovery
+deal_stage: discovery
+customer_segment: fish
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: manufacturing
+transaction_volume: above_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Brandon: Colton, how you doing?

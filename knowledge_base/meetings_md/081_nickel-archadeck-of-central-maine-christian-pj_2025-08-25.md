@@ -10,6 +10,23 @@ participants:
 - T.J. Langerak <null>
 source: Circleback
 meeting_number: 81
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: kickoff
+deal_stage: activation
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: construction
+transaction_volume: unknown
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Christian Sheerer: And that's why I wrote that on the invite.

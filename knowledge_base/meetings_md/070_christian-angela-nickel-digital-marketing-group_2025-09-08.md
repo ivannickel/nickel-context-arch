@@ -9,6 +9,22 @@ participants:
 - Angela Jaensch <angela.jaensch@digitalmarketinggroup.com>
 source: Circleback
 meeting_number: 70
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: review
+deal_stage: active
+customer_segment: fish
+has_pain_points: true
+has_objections: true
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: unknown
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 angela: Good morning.

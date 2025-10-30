@@ -11,6 +11,23 @@ participants:
 - Najeer Ahmed <null>
 source: Circleback
 meeting_number: 90
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: kickoff
+deal_stage: activation
+customer_segment: whale
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: manufacturing
+transaction_volume: above_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Najeer Ahmed: No. Hey. Hey.

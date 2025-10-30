@@ -12,6 +12,23 @@ participants:
 - Kush's Notetaker (Otter.ai) <null>
 source: Circleback
 meeting_number: 77
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: shrimp
+has_pain_points: false
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: false
+primary_industry: professional_services
+transaction_volume: sub_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Zak George: Hey, I'm doing great. Good to finally see you in the flesh. Just waiting for my colleague to hop on. I believe he's just about to hop off of one meeting.

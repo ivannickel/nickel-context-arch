@@ -12,6 +12,23 @@ participants:
 - read.ai meeting notes <null>
 source: Circleback
 meeting_number: 162
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: whale
+has_pain_points: true
+has_objections: true
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: manufacturing
+transaction_volume: above_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Jacob Greenberg: Man. How can I help you? Hi, I'm calling for Darren and I just to confirm our meeting right now. You're calling for him for a meeting? Yeah, we. We have a Zoom meeting scheduled and I just wanted to make sure he has the correct link to join. All time. Thank you so much. Product assortment including the most trusted name brands in the industry, spanning a wide range of product categories from ride control to body and cabin components and everything in between. We strive to provide quality on. Your call has been answered by a Viya IP office. It's not available. To leave a message, wait for the tone. When finished recording, press pound for more options. Otherwise for assistance, press zero. Now record at the tone. Good morning, Darren, this is Jacob calling from Nickel. I'm just calling to double check that you're able to attend our meeting today and that you have the correct link. I just forwarded you another easy access link in an email. I could hang on for another five minutes here before I'm going to go and we can reschedule. But I'll give you a little bit more time so that you can hop into the Zoom and hope to talk to you soon. Thank you. Light here. Hey, Darren, can you hear me okay? Yep. How's it going today?

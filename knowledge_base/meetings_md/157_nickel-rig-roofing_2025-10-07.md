@@ -10,6 +10,23 @@ participants:
 - Bridget Curtis <bridget@rigroofing.com>
 source: Circleback
 meeting_number: 157
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: review
+deal_stage: active
+customer_segment: fish
+has_pain_points: true
+has_objections: true
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: false
+primary_industry: construction
+transaction_volume: above_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Jacob Greenberg: David, can you hear me? Hey, guys.

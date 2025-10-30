@@ -12,6 +12,22 @@ participants:
 - Nickel's Notetaker <null>
 source: Circleback
 meeting_number: 9
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: review
+deal_stage: active
+customer_segment: fish
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: construction
+transaction_volume: unknown
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Hala: Can I help you?

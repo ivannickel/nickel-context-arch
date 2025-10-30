@@ -10,6 +10,22 @@ participants:
 - SS <null>
 source: Circleback
 meeting_number: 17
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: shrimp
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: false
+primary_industry: other
+transaction_volume: sub_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 SS: . . . . .

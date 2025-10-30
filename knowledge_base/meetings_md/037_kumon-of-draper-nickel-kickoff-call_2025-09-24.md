@@ -10,6 +10,25 @@ participants:
 - AskElephant Notetaker <null>
 source: Circleback
 meeting_number: 37
+extraction_priority: medium
+extraction_priority: medium
+extraction_priority: medium
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: kickoff
+deal_stage: activation
+customer_segment: shrimp
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: false
+primary_industry: professional_services
+transaction_volume: sub_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Colton O'Farrell: Good morning. Hi.

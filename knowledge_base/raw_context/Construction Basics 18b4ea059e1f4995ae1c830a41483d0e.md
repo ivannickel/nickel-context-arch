@@ -1,3 +1,25 @@
+---
+document_type: operational_guide
+date: 2025-10-30
+author: Ray Fu
+source: internal_doc
+
+topics:
+  - team_operations
+  - product_strategy
+
+signal_strength: low
+
+contains_icp: true
+contains_metrics: false
+contains_competitive: false
+contains_customer_evidence: false
+
+file_size: 3.2K
+processed: false
+lens_extracted: false
+---
+
 # Construction Basics
 
 Area: 🏢 Company Wide

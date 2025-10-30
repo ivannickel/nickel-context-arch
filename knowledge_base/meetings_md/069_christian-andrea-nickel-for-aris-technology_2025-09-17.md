@@ -11,6 +11,22 @@ participants:
 - Nickel's AskElephant Notetaker <null>
 source: Circleback
 meeting_number: 69
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: follow_up
+deal_stage: active
+customer_segment: shrimp
+has_pain_points: true
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: unknown
+ar_vs_ap: ap_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Christian Sheerer: Better than it not going.

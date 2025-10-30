@@ -11,6 +11,22 @@ participants:
 - B <null>
 source: Circleback
 meeting_number: 115
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: activation
+customer_segment: fish
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: false
+primary_industry: other
+transaction_volume: sub_threshold
+ar_vs_ap: ap
+processed: false
+dimensional_extracted: false
+extraction_priority: demo
 ---
 
 A: Hey. Hello? Christian, can you hear me?

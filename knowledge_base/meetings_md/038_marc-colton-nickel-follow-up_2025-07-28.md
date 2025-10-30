@@ -10,6 +10,25 @@ participants:
 - Marc <marcs@renewal.com>
 source: Circleback
 meeting_number: 38
+extraction_priority: high
+extraction_priority: high
+extraction_priority: high
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: follow_up
+deal_stage: active
+customer_segment: whale
+has_pain_points: true
+has_objections: true
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: construction
+transaction_volume: above_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Marc: .

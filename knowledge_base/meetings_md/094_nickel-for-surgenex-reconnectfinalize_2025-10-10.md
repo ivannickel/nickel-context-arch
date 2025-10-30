@@ -11,6 +11,22 @@ participants:
 - Najeer Ahmed <null>
 source: Circleback
 meeting_number: 94
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: follow_up
+deal_stage: active
+customer_segment: whale
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: false
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: manufacturing
+transaction_volume: unknown
+ar_vs_ap: ap_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Christian Sheerer: Around. No worries. Yeah, Yeah, I just wanted to make.

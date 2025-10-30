@@ -1,3 +1,26 @@
+---
+document_type: gtm_update
+date: 2025-05-04
+author: Ivan LaBianca
+source: notion
+
+topics:
+  - marketing_channels
+  - sales_operations
+  - financial_metrics
+
+signal_strength: medium
+
+contains_icp: false
+contains_metrics: true
+contains_competitive: false
+contains_customer_evidence: true
+
+file_size: 2.3K
+processed: false
+lens_extracted: false
+---
+
 # 5/4/25 - GTM Update
 
 Area: 🤑 Revenue

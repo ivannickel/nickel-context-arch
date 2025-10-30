@@ -10,6 +10,23 @@ participants:
 - Chris Sneed <chris@pavt.com>
 source: Circleback
 meeting_number: 57
+extraction_priority: high
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: whale
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: false
+primary_industry: hospitality
+transaction_volume: above_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Christian Sheerer: Obviously, right? That's what we do. Then we can click around the platform if we think it makes sense and then set up some time slash a game plan for testing out some transactions using nickel. And then if there's anything else that we need to help troubleshoot, set some time aside from for that in between now and then. Okay, cool. I guess I'll let you start. Like fill me in on kind of how the payments process works, like what the nature of the way you're currently doing those things now is most everyone pays by check.

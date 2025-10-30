@@ -1,3 +1,25 @@
+---
+document_type: operational_guide
+date: 2025-10-30
+author: Najeer Ahmed
+source: internal_doc
+
+topics:
+  - team_operations
+  - product_strategy
+
+signal_strength: low
+
+contains_icp: false
+contains_metrics: false
+contains_competitive: false
+contains_customer_evidence: false
+
+file_size: 1.5K
+processed: false
+lens_extracted: false
+---
+
 # Fraud Prevention / Risk Rules
 
 Area: 🤖 Engineering

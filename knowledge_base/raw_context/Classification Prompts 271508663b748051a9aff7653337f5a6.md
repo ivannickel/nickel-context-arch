@@ -1,3 +1,25 @@
+---
+document_type: process_doc
+date: 2025-10-30
+author: Ivan LaBianca
+source: internal_doc
+
+topics:
+  - icp_definition
+  - sales_operations
+
+signal_strength: medium
+
+contains_icp: true
+contains_metrics: false
+contains_competitive: false
+contains_customer_evidence: false
+
+file_size: 7.8K
+processed: false
+lens_extracted: false
+---
+
 # Classification Prompts
 
 Owner: Ivan LaBianca

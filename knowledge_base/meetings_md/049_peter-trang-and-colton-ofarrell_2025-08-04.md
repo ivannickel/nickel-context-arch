@@ -9,6 +9,25 @@ participants:
 - Peter Trang <3tgroup2024@gmail.com>
 source: Circleback
 meeting_number: 49
+extraction_priority: medium
+extraction_priority: medium
+extraction_priority: medium
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: follow_up
+deal_stage: active
+customer_segment: unknown
+has_pain_points: true
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: unknown
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Peter Trang: .

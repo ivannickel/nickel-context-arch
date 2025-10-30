@@ -9,6 +9,23 @@ participants:
 - Kayla Rakes <null>
 source: Circleback
 meeting_number: 140
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: general
+deal_stage: discovery
+customer_segment: unknown
+has_pain_points: false
+has_objections: true
+has_competitive_intel: true
+has_use_case: false
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: other
+transaction_volume: above_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: low
 ---
 
 Jacob Greenberg: Hey Kayla.

@@ -1,3 +1,24 @@
+---
+document_type: operational_guide
+date: 2025-10-30
+author: Claudio Wilson
+source: internal_doc
+
+topics:
+  - team_operations
+
+signal_strength: low
+
+contains_icp: false
+contains_metrics: false
+contains_competitive: false
+contains_customer_evidence: false
+
+file_size: 2.1K
+processed: false
+lens_extracted: false
+---
+
 # Engineering Tenets
 
 Area: 🤖 Engineering

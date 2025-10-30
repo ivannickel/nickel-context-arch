@@ -11,6 +11,23 @@ participants:
 - Charissa Floresca <charissa@mirastaffing.com>
 source: Circleback
 meeting_number: 54
+extraction_priority: high
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: fish
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: above_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Colton O'Farrell: For all of our customers across the board. So there's not really another company that does that. And a lot of those companies like build.com, Melio, even QuickBooks Online, they used to do that. And then about last September, they all changed and started charging. Are you guys getting like a 1% fee for that? 2%?

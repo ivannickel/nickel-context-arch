@@ -12,6 +12,19 @@ source: Circleback
 meeting_number: 75
 ---
 
+---
+strategic_classification:
+  meeting_type: discovery_demo
+  sales_stage: qualification
+  deal_status: active_conversation
+  key_topics:
+    - law_firm_collection
+    - ach_send_only
+    - quickbooks_integration
+    - bsa_aml_compliance
+  notable_context: Law firm doing collection work, seeking ACH send solution, compliance concerns around BSA/AML regulations
+---
+
 Christian Sheerer: Hello. Hi.
 Jennifer Marquez: Good morning. How are you?
 Christian Sheerer: Good. How are you? Is this Sean?

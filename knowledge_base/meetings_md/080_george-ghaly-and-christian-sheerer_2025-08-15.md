@@ -13,6 +13,19 @@ source: Circleback
 meeting_number: 80
 ---
 
+---
+strategic_classification:
+  meeting_type: discovery_demo
+  sales_stage: qualification
+  deal_status: active_conversation
+  key_topics:
+    - church_donations
+    - recurring_ach_payments
+    - payment_portal
+    - credit_card_fees
+  notable_context: Wayland Coptic Church seeking donation payment solution, recurring payments for 37 members, struggling with Needham Bank
+---
+
 Shehab Shaker: Hello.
 Christian Sheerer: How's it going?
 Shehab Shaker: It's going well. Thank you. Hi, Chris.

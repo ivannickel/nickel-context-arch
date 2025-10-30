@@ -10,6 +10,23 @@ participants:
 - Andres f Cifuentes Arcila <null>
 source: Circleback
 meeting_number: 156
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: kickoff
+deal_stage: activation
+customer_segment: shrimp
+has_pain_points: true
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: false
+primary_industry: construction
+transaction_volume: sub_threshold
+ar_vs_ap: ap_only
+processed: false
+dimensional_extracted: false
+extraction_priority: low
 ---
 
 Jacob Greenberg: Hey, can you guys hear me?

@@ -15,6 +15,23 @@ participants:
 - Catherine Sharp <null>
 source: Circleback
 meeting_number: 105
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: kickoff
+deal_stage: activation
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: property_management
+transaction_volume: unknown
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Christian Sheerer: Sense like it was remembering for. Because I. I went and spoke with Najeer and he. His guess is that QuickBooks is just remembering. Antique QuickBooks. Yeah, the one to link up. So he just. He disconnected that. So we could just link that one up again and we could go one by one by one. And we might have to open incognito window to do it. Or we might just have to hit a couple refreshes and it should give that drop down when you first did it. Of the three different. Because it's the same. Is it the same QuickBooks login? Like, no password.

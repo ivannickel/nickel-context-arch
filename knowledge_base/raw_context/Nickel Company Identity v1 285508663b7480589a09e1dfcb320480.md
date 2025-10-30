@@ -1,3 +1,25 @@
+---
+document_type: strategic_doc
+date: 2025-10-30
+author: Miguel
+source: internal_doc
+
+topics:
+  - icp_definition
+  - product_strategy
+
+signal_strength: high
+
+contains_icp: true
+contains_metrics: false
+contains_competitive: false
+contains_customer_evidence: false
+
+file_size: 1.8K
+processed: false
+lens_extracted: false
+---
+
 # Nickel Company Identity v1
 
 Area: 🏢 Company Wide

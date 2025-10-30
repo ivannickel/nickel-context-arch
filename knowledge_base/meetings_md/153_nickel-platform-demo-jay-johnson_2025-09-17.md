@@ -13,6 +13,23 @@ participants:
 - Nickel's AskElephant Notetaker <null>
 source: Circleback
 meeting_number: 153
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: shrimp
+has_pain_points: true
+has_objections: true
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: sub_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Zak George: Hi, Jay, it's Zak from Nickel. I just want to let you know my colleague are in the demo right now. Oh, yeah. So there is this link I sent you via email, j.johnson@fastsigns.com. You just have to click on that and you'll be able to hop on a Zoom meeting pretty much. Okay. Oh, so do you happen to see your calendar on the right side? There's probably going to be like.

@@ -10,6 +10,23 @@ participants:
 - Jimmy Nguyen <jimmy.nguyen@surgenex.com>
 source: Circleback
 meeting_number: 72
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: review
+deal_stage: active
+customer_segment: whale
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: manufacturing
+transaction_volume: above_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Jimmy Nguyen: Nothing much so far. We're working through the nickel platform right now. We're about to get ready to send out our first invoice. So we just had a couple of questions just to make sure we're doing everything correctly. We're not doing anything that might put us on the. On the Naughty Lister, anything like that. Sure. One of the biggest questions we had is, so nickel isn't integrating or syncing all of our invoices. And I think the workaround that we've had found out is if we just edit the invoice really quick, it'll pop up into the invoice list. Is this an intended.

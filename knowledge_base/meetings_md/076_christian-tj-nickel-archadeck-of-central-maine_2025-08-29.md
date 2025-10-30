@@ -11,6 +11,17 @@ source: Circleback
 meeting_number: 76
 ---
 
+---
+strategic_classification:
+  meeting_type: technical_support
+  sales_stage: onboarding
+  deal_status: active_setup
+  key_topics:
+    - login_issues
+    - account_setup
+  notable_context: Short technical support call for Archadeck Central Maine login issues
+---
+
 Christian Sheerer: So I saw you guys got signed up. Did you link everything out to send out the invoice?
 Archadeck of Central Maine: Oh, that's right. She couldn't get in. I haven't been here and she couldn't get in. I apologize.
 Christian Sheerer: Oh, no worries. All good. Yeah, yeah. Happy to walk you through guys through it.

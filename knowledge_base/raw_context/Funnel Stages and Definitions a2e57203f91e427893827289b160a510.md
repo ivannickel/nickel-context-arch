@@ -1,3 +1,25 @@
+---
+document_type: strategic_doc
+date: 2025-10-30
+author: Ray Fu
+source: internal_doc
+
+topics:
+  - sales_operations
+  - icp_definition
+
+signal_strength: high
+
+contains_icp: true
+contains_metrics: true
+contains_competitive: false
+contains_customer_evidence: false
+
+file_size: 3.8K
+processed: false
+lens_extracted: false
+---
+
 # Funnel Stages and Definitions
 
 Area: 🤑 Revenue

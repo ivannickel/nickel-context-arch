@@ -13,6 +13,23 @@ participants:
 - Nickel's AskElephant Notetaker <null>
 source: Circleback
 meeting_number: 159
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: whale
+has_pain_points: false
+has_objections: true
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: false
+primary_industry: manufacturing
+transaction_volume: above_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Jacob Greenberg: So by the end of this call, what I'll do is I'll show you a little bit of a demo based on the information you give me about your current process and we can map out next steps if it makes sense to have another call. Or I could just show you what it takes to get started on your own. Nickel is a very light lift, easy implementation with a high return on investment for you guys. So you might be able to just implement it on your own. But by the end of this call, we'll be able to decide whether or not we should have a follow up. Does that sound fair?

@@ -15,6 +15,23 @@ participants:
 - Participant 1 <null>
 source: Circleback
 meeting_number: 88
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: false
+primary_industry: construction
+transaction_volume: unknown
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: low
 ---
 
 Participant 2: This is Shelby.

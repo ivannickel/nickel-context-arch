@@ -9,6 +9,23 @@ participants:
 - Dan Ross <dan@rossindustries.com>
 source: Circleback
 meeting_number: 161
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: shrimp
+has_pain_points: false
+has_objections: true
+has_competitive_intel: true
+has_use_case: false
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: other
+transaction_volume: sub_threshold
+ar_vs_ap: unclear
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Jacob Greenberg: Hey, Dan, how's it going?

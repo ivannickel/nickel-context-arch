@@ -9,6 +9,22 @@ participants:
 - Carson Crawford <carson@lakecarolinems.com>
 source: Circleback
 meeting_number: 4
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: discovery
+deal_stage: discovery
+customer_segment: whale
+has_pain_points: true
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: false
+primary_industry: property_management
+transaction_volume: above_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Colton O'Farrell: Hey Carson. See, can you hear me okay?

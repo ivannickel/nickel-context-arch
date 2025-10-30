@@ -1,3 +1,25 @@
+---
+document_type: strategic_doc
+date: 2025-10-30
+author: Colton O'Farrell
+source: internal_doc
+
+topics:
+  - customer_success
+  - marketing_channels
+
+signal_strength: medium
+
+contains_icp: true
+contains_metrics: false
+contains_competitive: false
+contains_customer_evidence: true
+
+file_size: 412B
+processed: false
+lens_extracted: false
+---
+
 # Industry Pages Case Study Candidates
 
 Area: ⭐ Customer Success

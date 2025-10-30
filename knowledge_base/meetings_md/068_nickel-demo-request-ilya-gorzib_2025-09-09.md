@@ -10,6 +10,22 @@ participants:
 - Ariel <null>
 source: Circleback
 meeting_number: 68
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: unknown
+has_pain_points: false
+has_objections: true
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: other
+transaction_volume: unknown
+ar_vs_ap: unclear
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Ariel: Hey, can you hear me? Hello?

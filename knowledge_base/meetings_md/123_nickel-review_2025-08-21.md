@@ -11,6 +11,22 @@ participants:
 - Casey MacDougall <null>
 source: Circleback
 meeting_number: 123
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: review
+deal_stage: active
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: manufacturing
+transaction_volume: unknown
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Jacob Greenberg: . . . . . . . . . . . . . . . . . .

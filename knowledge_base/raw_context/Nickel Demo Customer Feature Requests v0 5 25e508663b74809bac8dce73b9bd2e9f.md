@@ -1,3 +1,25 @@
+---
+document_type: meeting_note
+date: 2025-10-30
+author: Miguel
+source: internal_doc
+
+topics:
+  - product_strategy
+  - customer_success
+
+signal_strength: medium
+
+contains_icp: false
+contains_metrics: false
+contains_competitive: false
+contains_customer_evidence: true
+
+file_size: 632B
+processed: false
+lens_extracted: false
+---
+
 # Nickel Demo Customer Feature Requests v0.5
 
 Owner: Miguel

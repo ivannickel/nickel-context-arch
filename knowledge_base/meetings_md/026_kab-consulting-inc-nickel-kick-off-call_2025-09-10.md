@@ -9,6 +9,22 @@ participants:
 - KAB Community Care Consulting <csherman@kabccconsulting.com>
 source: Circleback
 meeting_number: 26
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: kickoff
+deal_stage: activation
+customer_segment: shrimp
+has_pain_points: true
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: above_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 KAB Community Care Consulting: Yeah, hi, sorry, I am on my way home. I should be home in a couple minutes, but I was stuck in traffic.

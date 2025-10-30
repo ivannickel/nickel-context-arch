@@ -11,6 +11,25 @@ participants:
 - null <rjanssen@warmwater.com>
 source: Circleback
 meeting_number: 43
+extraction_priority: high
+extraction_priority: high
+extraction_priority: high
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: discovery
+deal_stage: discovery
+customer_segment: shrimp
+has_pain_points: true
+has_objections: true
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: manufacturing
+transaction_volume: sub_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Colton O'Farrell: Possible to with times here. I know you had to reschedule this previous meeting, but I know you got my email regarding the agenda. Typically, how we handle these calls is I want to learn more about you, your business, how you found Nickel, kind of what's going on from an AR and AP standpoint. Once we have a good understanding of your business use cases, we'll pop over to the Nickel demo platform, tailor it to those use cases, walk you through some kind of Basic workflows that you'd be dealing with. We'd wrap up deciding on whether it's a good fit or not, discuss the plan options and next steps. But how does that sound for you?

@@ -11,6 +11,23 @@ participants:
 - AskElephant Notetaker <null>
 source: Circleback
 meeting_number: 139
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: discovery
+deal_stage: discovery
+customer_segment: whale
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: above_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 bob: Jacob, are you there?

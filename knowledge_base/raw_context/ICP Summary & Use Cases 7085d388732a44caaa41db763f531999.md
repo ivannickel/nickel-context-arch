@@ -1,3 +1,26 @@
+---
+document_type: strategic_doc
+date: 2025-10-30
+author: Ray Fu
+source: internal_doc
+
+topics:
+  - icp_definition
+  - sales_operations
+  - customer_success
+
+signal_strength: high
+
+contains_icp: true
+contains_metrics: true
+contains_competitive: false
+contains_customer_evidence: true
+
+file_size: 8.7K
+processed: false
+lens_extracted: false
+---
+
 # ICP Summary & Use Cases
 
 Area: 🏢 Company Wide

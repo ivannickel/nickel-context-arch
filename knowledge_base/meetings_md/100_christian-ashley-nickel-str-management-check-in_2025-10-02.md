@@ -11,6 +11,23 @@ participants:
 - +1 817-***-**63 <null>
 source: Circleback
 meeting_number: 100
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: review
+deal_stage: active
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: false
+primary_industry: professional_services
+transaction_volume: unknown
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Ashley Eaton: Where. If we're bringing on new programs. But Jody does most of the, like, day to day operational stuff, so she'll be the one that's primarily using it once it's. Once it's up and running.

@@ -10,6 +10,22 @@ participants:
 - Tom Leenheer <thomas.leenheer@huntington.com>
 source: Circleback
 meeting_number: 116
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: strategic
+deal_stage: discovery
+customer_segment: whale
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: false
+has_pricing_discussion: false
+has_integration_needs: false
+primary_industry: financial
+transaction_volume: unknown
+ar_vs_ap: unclear
+processed: false
+dimensional_extracted: false
+extraction_priority: strategic
 ---
 
 Tom Leenheer - Huntington Bank: Directly. Okay, great. I'm not surprised. So, I apologize if there's any confusion in next message.

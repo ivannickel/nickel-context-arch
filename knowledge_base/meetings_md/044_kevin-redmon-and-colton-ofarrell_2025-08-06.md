@@ -10,6 +10,25 @@ participants:
 - read.ai meeting notes <null>
 source: Circleback
 meeting_number: 44
+extraction_priority: high
+extraction_priority: high
+extraction_priority: high
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: discovery
+deal_stage: discovery
+customer_segment: fish
+has_pain_points: true
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: accounting
+transaction_volume: near_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Colton O'Farrell: . . . . . . . . . . . Good morning, Kevin. Glad I could get you on. Sorry, Google Meet challenges there. But I'm really excited to talk to you today. Just wanted to learn a little bit more about your business and kind of reasoning for setting up this meeting today. Check out your website. I was curious a little bit of how you found Nickel, what you have going on today, and then any specific questions you have. Once I have that information, happy to walk you through the nickel demo per your use cases, and then we'll discuss kind of which plan meets your needs and kind of next steps. But how does that sound, Kevin?

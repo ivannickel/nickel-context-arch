@@ -10,6 +10,22 @@ participants:
 - Maria Paula Manrique <null>
 source: Circleback
 meeting_number: 128
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: review
+deal_stage: active
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: false
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: transportation
+transaction_volume: unknown
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: low
 ---
 
 Maria Paula Manrique: Hey, Jacob. Good morning.

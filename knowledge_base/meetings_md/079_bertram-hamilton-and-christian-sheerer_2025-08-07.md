@@ -12,6 +12,18 @@ source: Circleback
 meeting_number: 79
 ---
 
+---
+strategic_classification:
+  meeting_type: discovery_demo
+  sales_stage: disqualification
+  deal_status: fraud_risk
+  key_topics:
+    - construction_roofing
+    - suspicious_activity
+    - identity_concerns
+  notable_context: Potential fraud case - inconsistent details, lovable website, name matches another person in similar business
+---
+
 Christian Sheerer: Hi. Bertram. Hello. Yeah. Hi. How's it going?
 Bertram Hamilton: Yeah, I'm fine.
 Christian Sheerer: How are you doing well? Staying busy. Can't complain. I'm gonna go camera off, too, then, if that. If you don't mind.

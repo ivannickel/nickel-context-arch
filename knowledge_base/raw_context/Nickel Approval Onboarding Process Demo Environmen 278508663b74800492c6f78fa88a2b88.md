@@ -1,3 +1,25 @@
+---
+document_type: meeting_note
+date: 2025-10-30
+author: Miguel
+source: internal_doc
+
+topics:
+  - product_strategy
+  - team_operations
+
+signal_strength: medium
+
+contains_icp: false
+contains_metrics: false
+contains_competitive: true
+contains_customer_evidence: false
+
+file_size: 1.2K
+processed: false
+lens_extracted: false
+---
+
 # Nickel Approval/Onboarding Process Demo Environment Discussion Agenda
 
 Owner: Miguel

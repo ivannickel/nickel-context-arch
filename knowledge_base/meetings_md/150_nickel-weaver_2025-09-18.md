@@ -15,6 +15,22 @@ participants:
 - read.ai meeting notes <null>
 source: Circleback
 meeting_number: 150
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: kickoff
+deal_stage: activation
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: false
+primary_industry: manufacturing
+transaction_volume: unknown
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Jacob Greenberg: Hey Bryce, can you hear me?

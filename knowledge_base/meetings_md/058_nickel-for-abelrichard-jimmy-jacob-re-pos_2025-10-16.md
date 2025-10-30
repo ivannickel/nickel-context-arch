@@ -12,6 +12,23 @@ participants:
 - null <john.willemsen@abelrichard.com>
 source: Circleback
 meeting_number: 58
+extraction_priority: high
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: kickoff
+deal_stage: activation
+customer_segment: whale
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: retail
+transaction_volume: above_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Jacob Greenberg: Hey, Jimmy, can you hear us?

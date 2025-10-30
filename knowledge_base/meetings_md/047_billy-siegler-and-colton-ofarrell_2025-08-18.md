@@ -10,6 +10,25 @@ participants:
 - Billy <null>
 source: Circleback
 meeting_number: 47
+extraction_priority: medium
+extraction_priority: medium
+extraction_priority: medium
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: discovery
+deal_stage: discovery
+customer_segment: unknown
+has_pain_points: true
+has_objections: true
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: false
+primary_industry: other
+transaction_volume: unknown
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Billy: Hello.

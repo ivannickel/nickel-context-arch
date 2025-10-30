@@ -9,6 +9,23 @@ participants:
 - Jason Molaison <jasonm@gtscomp.com>
 source: Circleback
 meeting_number: 102
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: fish
+has_pain_points: false
+has_objections: true
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: near_threshold
+ar_vs_ap: ap_only
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Jason: Hey, Christian, how's it going?

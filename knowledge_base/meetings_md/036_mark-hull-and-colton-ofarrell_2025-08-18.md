@@ -9,6 +9,25 @@ participants:
 - Mr. Hull <m.hull@noblelearningacademy.org>
 source: Circleback
 meeting_number: 36
+extraction_priority: high
+extraction_priority: high
+extraction_priority: high
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: discovery
+deal_stage: discovery
+customer_segment: shrimp
+has_pain_points: true
+has_objections: true
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: sub_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Colton O'Farrell: Hey, Mark.

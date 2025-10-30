@@ -11,6 +11,23 @@ participants:
 - Participant 2 <null>
 source: Circleback
 meeting_number: 82
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: follow_up
+deal_stage: active
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: other
+transaction_volume: unknown
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Jim Lisi: Oh, there we go. Now I can see your black file cabinet. I can't see you. Now I see nothing. Hey Christian, can you hear me?

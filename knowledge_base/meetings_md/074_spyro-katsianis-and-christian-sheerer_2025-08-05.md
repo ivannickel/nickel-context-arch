@@ -12,6 +12,16 @@ source: Circleback
 meeting_number: 74
 ---
 
+---
+strategic_classification:
+  meeting_type: no_show
+  sales_stage: qualification
+  deal_status: stalled_low_priority
+  key_topics:
+    - no_show_second_time
+  notable_context: Second no-show from prospect, likely disqualified
+---
+
 Christian Sheerer: Hey, what up? How are you? I'm good. Yourself? Dope. Doing good. Sounded like, got some good takeaways from your call with Jacob. I was Working on something in the background? Script wise? Script wise? You said you were working on something in the background. Was it like script wise or something else? No, no. Thinking about some like ROI documentation for this, deal. Okay, okay. Um, and fooling around with like what our plan for rolling out with them should be. Gosh, what is this guy's problem at? I think this is the second time around he hasn't showed up. Yeah, I think we give them this time and then not like we hit them with something like hey, is this still even still a thing for you? You know, like. And then don't waste the energy mind space on it, you know, keep it pushing. I'm gonna move. You gave me a date and time, though, just like you did the last time. I wonder if this. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 ---

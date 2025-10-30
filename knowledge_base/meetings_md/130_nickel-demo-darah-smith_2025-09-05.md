@@ -11,6 +11,22 @@ participants:
 - Darah T. Tabuteau <null>
 source: Circleback
 meeting_number: 130
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: fish
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: near_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Darah T. Tabuteau: Two years in Virginia, in Blackstone, Virginia. So we just, her mom is buried there. She grew up in Blackstone, Virginia. So we went to visit her grave and my aunt, she's in Springfield. And we still have some family in Virginia. So we just went back so my mom could visit her sister and cousins. For a little while, but I've always been in New York.

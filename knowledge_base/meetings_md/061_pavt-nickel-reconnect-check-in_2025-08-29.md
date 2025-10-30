@@ -10,6 +10,22 @@ participants:
 - Chris Sneed <chris@pavt.com>
 source: Circleback
 meeting_number: 61
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: follow_up
+deal_stage: active
+customer_segment: unknown
+has_pain_points: false
+has_objections: false
+has_competitive_intel: false
+has_use_case: false
+has_pricing_discussion: false
+has_integration_needs: false
+primary_industry: other
+transaction_volume: unknown
+ar_vs_ap: unclear
+processed: false
+dimensional_extracted: false
+extraction_priority: low
 ---
 
 Christopher Sneed: Time later today or maybe, maybe even just Tuesday of next week because today's Friday and today, you don't like to work late on a Friday. But Andrew didn't even have time to go through the other thing yet. But right now he's on a conference call that I have to rejoin in a second.

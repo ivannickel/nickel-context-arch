@@ -9,6 +9,22 @@ participants:
 - Dave (Whatcom Landscapes) <dave@whatcomlandscapes.com>
 source: Circleback
 meeting_number: 25
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: discovery
+deal_stage: discovery
+customer_segment: fish
+has_pain_points: true
+has_objections: true
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: unknown
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Dave (Whatcom Landscapes): Hey, Dave. Hello. How are you?

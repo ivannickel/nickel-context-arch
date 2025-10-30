@@ -10,6 +10,22 @@ participants:
 - Gilliane Romann <null>
 source: Circleback
 meeting_number: 127
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: shrimp
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: hospitality
+transaction_volume: sub_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: medium
 ---
 
 Jacob Greenberg: Good. So you guys hopped in a little bit early, so I wanted to jump in as well. So cool. Saad Jelane, I saw that you booked this meeting pretty recently. So yeah, typically the way we start is just give me a little bit of background about what you guys do, how you guys found us, and what you're looking to get from using Nickel.

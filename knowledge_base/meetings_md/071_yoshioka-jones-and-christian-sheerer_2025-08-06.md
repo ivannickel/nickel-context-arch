@@ -12,6 +12,19 @@ source: Circleback
 meeting_number: 71
 ---
 
+---
+strategic_classification:
+  meeting_type: discovery_demo
+  sales_stage: qualification
+  deal_status: active_conversation
+  key_topics:
+    - archadeck_franchise
+    - ach_payment_processing
+    - bank_technical_issues
+    - quickbooks_integration
+  notable_context: Savannah Archadeck franchisee, launched Feb/March 2025, struggling with clunky bank ACH system
+---
+
 Christian Sheerer: Sorry, I had my headphones turned way down. Right. How are you? Good.
 Yoshi: How are you doing today?
 Christian Sheerer: Doing well, staying busy, but that's okay. I can't complain about that. It's better than sitting around and doing nothing.

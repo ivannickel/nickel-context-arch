@@ -13,7 +13,18 @@ source: Circleback
 meeting_number: 83
 ---
 
-#ERROR!
+---
+strategic_classification:
+  meeting_type: check_in
+  sales_stage: onboarding
+  deal_status: active_customer
+  key_topics:
+    - tax_services
+    - customer_success
+  notable_context: K&R Taxes check-in call, transcript content error during processing
+---
+
+[TRANSCRIPT ERROR: Original transcript content was corrupted during processing. Meeting recording available via link below.]
 
 ---
 

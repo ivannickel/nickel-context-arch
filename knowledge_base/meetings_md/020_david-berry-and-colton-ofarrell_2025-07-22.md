@@ -9,6 +9,22 @@ participants:
 - David Berry <david@kaminoengineering.com>
 source: Circleback
 meeting_number: 20
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: discovery
+deal_stage: discovery
+customer_segment: shrimp
+has_pain_points: true
+has_objections: false
+has_competitive_intel: true
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: manufacturing
+transaction_volume: sub_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Colton O'Farrell: Doing really well here. Can't complain. Just getting set up. It looks like I'm all good. Awesome. Well, David, really appreciate you making some time today to hop on this call. Generally just want to give you a quick overview of typically how these go. So just want to learn more about you, Camino Engineering, what got you to find Nickel and what got you to hop on this call. Once I understand a little bit more about your business, what you're looking for in a solution, I'm happy to show you the platform, tailor it to your use cases, Then we'll wrap up with discussing which plan is a good fit for you and those next steps. But how does that sound?

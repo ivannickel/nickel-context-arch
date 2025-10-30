@@ -10,6 +10,23 @@ participants:
 - Todd <null>
 source: Circleback
 meeting_number: 78
+
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: review
+deal_stage: active
+customer_segment: fish
+has_pain_points: true
+has_objections: true
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: professional_services
+transaction_volume: near_threshold
+ar_vs_ap: both
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Participant 1: Good, good. Doing well, staying busy. Better than sitting around doing nothing, though, so I can't complain.

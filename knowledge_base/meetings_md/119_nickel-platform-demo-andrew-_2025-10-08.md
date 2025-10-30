@@ -10,6 +10,22 @@ participants:
 - Andrew . <andrew@gulfcoastaluminum.com>
 source: Circleback
 meeting_number: 119
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: full
+deal_stage: evaluation
+customer_segment: fish
+has_pain_points: true
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: false
+has_integration_needs: true
+primary_industry: construction
+transaction_volume: above_threshold
+ar_vs_ap: ar
+processed: false
+dimensional_extracted: false
+extraction_priority: demo
 ---
 
 Jacob Greenberg: Sam. Hey, Andrew, can you hear me okay?

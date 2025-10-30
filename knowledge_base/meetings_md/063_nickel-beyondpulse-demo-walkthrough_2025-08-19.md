@@ -11,6 +11,22 @@ participants:
 - Eva by Marblism <null>
 source: Circleback
 meeting_number: 63
+# === STRATEGIC CLASSIFICATION (Transcript Classifier Agent v1.0) ===
+call_type: demo
+deal_stage: evaluation
+customer_segment: fish
+has_pain_points: true
+has_objections: false
+has_competitive_intel: false
+has_use_case: true
+has_pricing_discussion: true
+has_integration_needs: true
+primary_industry: other
+transaction_volume: sub_threshold
+ar_vs_ap: ar_only
+processed: false
+dimensional_extracted: false
+extraction_priority: high
 ---
 
 Emma Pell: The day over here, and Matt was on, and then I think he just had to step away real quick.
