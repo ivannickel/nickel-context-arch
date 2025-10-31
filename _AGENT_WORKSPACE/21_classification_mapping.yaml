@@ -1,0 +1,141 @@
+# Classification Mapping for Batch Missing B, C, D
+# Source: batch_missing_B_results.md, batch_missing_C_results.md, batch_missing_D_results.md
+# Generated: 2025-10-30
+
+classifications:
+  # Batch B (101-110)
+  103_nickel-platform-demo-charles-stafford_2025-10-16.md:
+    call_type: demo
+    deal_stage: evaluation
+    customer_segment: whale
+    has_pain_points: true
+    has_objections: false
+    has_competitive_intel: true
+    has_use_case: true
+    has_pricing_discussion: true
+    has_integration_needs: true
+    primary_industry: construction
+    transaction_volume: above_threshold
+    ar_vs_ap: ar_only
+    processed: false
+    dimensional_extracted: false
+    extraction_priority: high
+
+  104_nickel-demo-sterling-chipman_2025-08-29.md:
+    call_type: demo
+    deal_stage: evaluation
+    customer_segment: shrimp
+    has_pain_points: true
+    has_objections: false
+    has_competitive_intel: false
+    has_use_case: true
+    has_pricing_discussion: true
+    has_integration_needs: true
+    primary_industry: accounting
+    transaction_volume: sub_threshold
+    ar_vs_ap: ar_only
+    processed: false
+    dimensional_extracted: false
+    extraction_priority: medium
+
+  105_nickel-for-blue-hills-at-round-top_2025-09-24.md:
+    call_type: kickoff
+    deal_stage: activation
+    customer_segment: unknown
+    has_pain_points: false
+    has_objections: false
+    has_competitive_intel: false
+    has_use_case: true
+    has_pricing_discussion: false
+    has_integration_needs: true
+    primary_industry: property_management
+    transaction_volume: unknown
+    ar_vs_ap: ar_only
+    processed: false
+    dimensional_extracted: false
+    extraction_priority: medium
+
+  106_nickel-demo-request-thanmay-kumar_2025-09-30.md:
+    call_type: demo
+    deal_stage: evaluation
+    customer_segment: unknown
+    has_pain_points: false
+    has_objections: true
+    has_competitive_intel: false
+    has_use_case: true
+    has_pricing_discussion: true
+    has_integration_needs: false
+    primary_industry: manufacturing
+    transaction_volume: unknown
+    ar_vs_ap: ar_only
+    processed: false
+    dimensional_extracted: false
+    extraction_priority: medium
+
+  107_nickel-demo-request-lyle-applbaum_2025-09-26.md:
+    call_type: demo
+    deal_stage: evaluation
+    customer_segment: fish
+    has_pain_points: false
+    has_objections: false
+    has_competitive_intel: true
+    has_use_case: true
+    has_pricing_discussion: true
+    has_integration_needs: true
+    primary_industry: other
+    transaction_volume: unknown
+    ar_vs_ap: ap_only
+    processed: false
+    dimensional_extracted: false
+    extraction_priority: high
+
+  108_nickel-demo-request-amanda-pettay_2025-10-16.md:
+    call_type: demo
+    deal_stage: evaluation
+    customer_segment: shrimp
+    has_pain_points: true
+    has_objections: false
+    has_competitive_intel: true
+    has_use_case: true
+    has_pricing_discussion: true
+    has_integration_needs: true
+    primary_industry: professional_services
+    transaction_volume: sub_threshold
+    ar_vs_ap: both
+    processed: false
+    dimensional_extracted: false
+    extraction_priority: medium
+
+  109_nickel-demo-request-byron-floyd_2025-09-29.md:
+    call_type: demo
+    deal_stage: evaluation
+    customer_segment: whale
+    has_pain_points: true
+    has_objections: false
+    has_competitive_intel: false
+    has_use_case: true
+    has_pricing_discussion: true
+    has_integration_needs: true
+    primary_industry: manufacturing
+    transaction_volume: above_threshold
+    ar_vs_ap: ar_only
+    processed: false
+    dimensional_extracted: false
+    extraction_priority: high
+
+  110_nickel-demo-request-ryan-jacob_2025-09-22.md:
+    call_type: demo
+    deal_stage: evaluation
+    customer_segment: whale
+    has_pain_points: true
+    has_objections: true
+    has_competitive_intel: true
+    has_use_case: true
+    has_pricing_discussion: true
+    has_integration_needs: true
+    primary_industry: manufacturing
+    transaction_volume: above_threshold
+    ar_vs_ap: both
+    processed: false
+    dimensional_extracted: false
+    extraction_priority: high

@@ -1,0 +1,1300 @@
+version: 1.2
+created: 2025-10-30
+updated: 2025-10-30
+status: active
+description: "Strategic intelligence lens for Nickel GTM context architecture - guides dimensional extraction, strategic_fit scoring, and iterative context accumulation"
+changelog:
+  - version: 1.2
+    date: 2025-10-30
+    changes: "Added iterative context layering rules: node_lifecycle, update_vs_create_logic, confidence_scoring, wiki_link_generation, foundation_validation_rules"
+  - version: 1.1
+    date: 2025-10-30
+    changes: "Integrated Ivan's critical ICP refinements: margin_profile, headcount constraints, transaction_profile, business_model_constraints, updated anti_personas (high-margin services, e-commerce, large accounting teams, ACH-only AP)"
+  - version: 1.0
+    date: 2025-10-30
+    changes: "Initial lens creation from 5 high-signal Nickel documents"
+
+evidence_attribution:
+  - source: "ICP Summary & Use Cases 7085d388732a44caaa41db763f531999.md"
+    type: "VERIFIED"
+    extracted: "2025-10-30"
+  - source: "Nickel core positioning statement 59b9fd94b2d04a249ea024128f159bdb.md"
+    type: "VERIFIED"
+    extracted: "2025-10-30"
+  - source: "08 29 25 - GTM Build Update 25e508663b7481b5b2c1d0667e859c1d.md"
+    type: "VERIFIED"
+    extracted: "2025-10-30"
+  - source: "Funnel Stages and Definitions a2e57203f91e427893827289b160a510.md"
+    type: "VERIFIED"
+    extracted: "2025-10-30"
+  - source: "Classification Prompts 271508663b748051a9aff7653337f5a6.md"
+    type: "VERIFIED"
+    extracted: "2025-10-30"
+  - source: "Ivan LaBianca call transcript (Jacob + Ivan context discussion)"
+    type: "VERIFIED"
+    extracted: "2025-10-30"
+    notes: "Critical ICP refinements: tight margins, small headcount, sales-led vs e-commerce, CC revenue dependency"
+
+# ==============================================================================
+# ITERATIVE CONTEXT LAYERING RULES
+# ==============================================================================
+# These rules govern how nodes evolve as transcripts are processed progressively
+
+node_lifecycle:
+  description: "Status progression rules for knowledge graph nodes as evidence accumulates"
+
+  status_definitions:
+    baseline:
+      description: "Foundation nodes seeded from raw_context before transcript processing"
+      confidence: "medium"
+      source_requirement: "≥1 raw_context document"
+      notes: "Foundation layer starting hypothesis"
+
+    emergent:
+      description: "New pattern discovered from transcripts, needs validation"
+      confidence: "low-medium"
+      source_requirement: "frequency = 1"
+      notes: "Watch for revalidation in next batch"
+
+    validating:
+      description: "Foundation nodes being confirmed by transcript evidence"
+      confidence: "medium-high"
+      source_requirement: "≥1 transcript validation signal"
+      notes: "Foundation hypothesis getting transcript support"
+
+    validated:
+      description: "Pattern confirmed across multiple sources"
+      confidence: "high"
+      source_requirement: "frequency ≥ 2 (customer nodes) OR ≥2 transcript validations (foundation nodes)"
+      notes: "Repeatable pattern, ready for strategic use"
+
+    canonical:
+      description: "High-frequency pattern, core to GTM strategy"
+      confidence: "very high"
+      source_requirement: "frequency ≥ 5 (customer nodes) OR ≥5 transcript validations (foundation nodes)"
+      notes: "Proven repeatable, reference in deliverables"
+
+  progression_rules:
+    foundation_nodes:
+      - "baseline → validating (after 1st transcript validation signal)"
+      - "validating → validated (after 2nd transcript validation)"
+      - "validated → canonical (after 5th transcript validation)"
+
+    customer_nodes:
+      - "emergent → validated (after 2nd occurrence, freq ≥ 2)"
+      - "validated → canonical (after 5th occurrence, freq ≥ 5)"
+
+  auto_progression_triggers:
+    - "Node Synthesizer checks frequency/validation count EVERY transcript"
+    - "Status updated immediately when threshold crossed"
+    - "Context Weaver updates foundation node status every 10-20 transcripts"
+
+update_vs_create_logic:
+  description: "Rules for when to UPDATE existing nodes vs CREATE new nodes"
+
+  node_matching_rules:
+    persona_match:
+      criteria:
+        - "Same persona_type (e.g., Business Owner, CFO)"
+        - "Same industry vertical OR similar firmographics"
+        - "Strategic_fit within 2 points (e.g., existing 8.5, new 7.2 = MATCH)"
+      action: "UPDATE existing persona node"
+      update_operations:
+        - "Increment frequency in frontmatter"
+        - "Append new evidence to context_lineage.sources[]"
+        - "Add transcript_id to context_lineage.transcript_sources[]"
+        - "Recalculate strategic_fit (weighted average of all sources)"
+        - "Update status if threshold crossed (emergent → validated)"
+        - "Add new pain_points, objections, requirements if mentioned"
+
+    pain_point_match:
+      criteria:
+        - "Same pain category (e.g., cash-flow-constraints)"
+        - "Severity within 1 level (CRITICAL/HIGH = match, HIGH/LOW = no match)"
+      action: "UPDATE existing pain point node"
+      update_operations:
+        - "Increment frequency"
+        - "Append evidence with new transcript quote"
+        - "Update severity if new evidence is higher"
+        - "Add affected_personas if new personas mention it"
+        - "Update status progression"
+
+    objection_match:
+      criteria:
+        - "Same objection category (e.g., volume-threshold-barriers)"
+        - "Similar objection statement (semantic match)"
+      action: "UPDATE existing objection node"
+      update_operations:
+        - "Increment frequency"
+        - "Append handling_strategies if new approach observed"
+        - "Add affected_personas"
+        - "Update severity if pattern intensifies"
+
+    use_case_match:
+      criteria:
+        - "Same use case category (e.g., quickbooks-integration)"
+        - "Similar customer workflow"
+      action: "UPDATE existing use case node"
+      update_operations:
+        - "Increment frequency"
+        - "Add new personas who need it"
+        - "Append success_signals if new validation"
+
+    competitive_intel_match:
+      criteria:
+        - "Same competitor name (exact match)"
+      action: "UPDATE existing competitive intel node"
+      update_operations:
+        - "Increment mention_frequency"
+        - "Append satisfaction_signals (positive/negative)"
+        - "Update pricing_intel if new data"
+        - "Add displacement_evidence if win mentioned"
+
+    no_match_create_new:
+      criteria:
+        - "No existing node matches criteria above"
+        - "Novel pattern not in taxonomy"
+      action: "CREATE new node with status: emergent"
+      create_operations:
+        - "Set frequency: 1"
+        - "Set status: emergent (customer) OR baseline (foundation)"
+        - "Set confidence: low-medium"
+        - "Flag for validation watch in next batch"
+
+  semantic_matching:
+    description: "Use semantic similarity, not exact string match"
+    examples:
+      - "'cash flow issues' = 'payment delays hurting cashflow' → MATCH"
+      - "'volume threshold' = 'minimum payment volume requirement' → MATCH"
+      - "'QuickBooks integration' = 'QB sync' = 'QBO connection' → MATCH"
+    tools: "Use similarity scoring, keyword overlap, category alignment"
+
+confidence_scoring:
+  description: "How confidence increases as sources accumulate"
+
+  calculation_formula:
+    base_confidence:
+      baseline: 5.0
+      emergent: 3.0
+      validating: 6.0
+      validated: 7.5
+      canonical: 9.0
+
+    source_boost:
+      formula: "base_confidence + (log10(source_count + 1) × 1.5)"
+      explanation: "Logarithmic growth - diminishing returns after many sources"
+      cap: 10.0
+      examples:
+        - "emergent (freq 1): 3.0 + (log10(2) × 1.5) = 3.45"
+        - "validated (freq 3): 7.5 + (log10(4) × 1.5) = 8.40"
+        - "canonical (freq 10): 9.0 + (log10(11) × 1.5) = 10.0 (capped)"
+
+    evidence_quality_multiplier:
+      high_quality: 1.2
+      medium_quality: 1.0
+      low_quality: 0.8
+
+      quality_criteria:
+        high:
+          - "Direct quote with line citation"
+          - "Quantified impact (ROI, cost, time savings)"
+          - "Multiple personas mention same pattern"
+        medium:
+          - "Indirect reference, paraphrased"
+          - "Qualitative impact only"
+        low:
+          - "Vague mention, no context"
+          - "Contradictory evidence present"
+
+  confidence_display:
+    in_node_frontmatter:
+      field: "confidence"
+      format: "0-10 scale (1 decimal)"
+      update_rule: "Recalculate every time node updated"
+
+    in_synthesis_rollups:
+      high_confidence: "≥8.0 (use in strategic recommendations)"
+      medium_confidence: "6.0-7.9 (use with caveats)"
+      low_confidence: "<6.0 (flag as needing more validation)"
+
+wiki_link_generation:
+  description: "Rules for creating [[wiki-links]] between nodes as connections emerge"
+
+  trigger_conditions:
+    persona_to_pain:
+      when: "Persona mentions pain point in transcript evidence"
+      action: "Add [[pain-point-slug]] to persona node pain_points[] section"
+      reverse: "Add [[persona-slug]] to pain point affected_personas[] section"
+
+    persona_to_objection:
+      when: "Persona raises objection in transcript"
+      action: "Add [[objection-slug]] to persona node objections[] section"
+      reverse: "Add [[persona-slug]] to objection affected_personas[] section"
+
+    persona_to_use_case:
+      when: "Persona requests or uses specific use case"
+      action: "Add [[use-case-slug]] to persona node use_cases[] section"
+      reverse: "Add [[persona-slug]] to use case applicable_personas[] section"
+
+    pain_to_objection:
+      when: "Pain point mentioned alongside objection (causal relationship)"
+      action: "Add [[objection-slug]] to pain point related_objections[] section"
+      example: "cash-flow pain → relates to → volume-threshold objection"
+
+    objection_to_competitive:
+      when: "Objection involves competitor mention"
+      action: "Add [[competitor-slug]] to objection competitive_context[] section"
+      example: "existing-solution-satisfaction objection → links to → melio.md"
+
+    use_case_to_product_requirement:
+      when: "Use case has specific product requirement"
+      action: "Add [[requirement-slug]] to use case requirements[] section"
+      example: "ar-automation use case → requires → quickbooks-integration"
+
+    foundation_to_customer:
+      when: "Foundation ICP criteria validated by customer persona"
+      action: "Add [[persona-slug]] to foundation validation_examples[] section"
+      example: "icp-definition.md → validated by → [[building-materials-whale-owner]]"
+
+  wiki_link_syntax:
+    format: "[[node-file-slug]]"
+    resolution: "Relative path from current node location"
+    validation: "Context Weaver checks for broken links every 10-20 transcripts"
+
+foundation_validation_rules:
+  description: "How foundation nodes (from raw_context) get validated by transcripts"
+
+  validation_signal_types:
+    icp_criteria_match:
+      trigger: "Persona matches ICP firmographic criteria"
+      action: "Increment validation_count in foundation/icp/ nodes"
+      example:
+        foundation_node: "00_foundation/icp/icp-definition.md"
+        criteria: "margin_profile <30%"
+        transcript_signal: "Persona has 25% margins"
+        action: "Add validation evidence, increment count"
+
+    value_prop_confirmation:
+      trigger: "Pain point aligns with stated value prop"
+      action: "Update foundation/value_props/ node with transcript evidence"
+      example:
+        foundation_node: "00_foundation/value_props/supplier-finance-platform.md"
+        value_prop: "Eliminate payment delays"
+        transcript_signal: "cash-flow-constraints pain mentioned"
+        action: "Add supporting evidence, update validation status"
+
+    competitive_positioning_test:
+      trigger: "Competitor mentioned in transcript"
+      action: "Update foundation/competitive_intel/ node with actual customer feedback"
+      example:
+        foundation_node: "00_foundation/competitive_intel/melio.md"
+        positioning_claim: "Melio expensive at $90/mo"
+        transcript_signal: "Customer says Melio is $90/mo"
+        action: "VERIFIED confirmation, increment validation count"
+
+    positioning_statement_validation:
+      trigger: "Customer language matches positioning"
+      action: "Update foundation/positioning/ nodes with evidence"
+      example:
+        foundation_node: "00_foundation/positioning/positioning-statement.md"
+        positioning: "All-in-one Supplier Finance platform"
+        transcript_signal: "Customer mentions wanting 'all in one solution'"
+        action: "Language validation, increment count"
+
+    product_capability_confirmation:
+      trigger: "Product requirement matches stated capabilities"
+      action: "Update foundation/product/ nodes"
+      example:
+        foundation_node: "00_foundation/product/quickbooks-integration.md"
+        capability: "Two-way QuickBooks sync"
+        transcript_signal: "Customer asks about QB integration"
+        action: "Universal requirement confirmed, increment frequency"
+
+  contradiction_flagging:
+    when: "Transcript evidence contradicts foundation claim"
+    action: "Add contradiction_flag to foundation node"
+    examples:
+      - foundation_claim: "ICP sweet spot is $5-25M (Whale)"
+        transcript_pattern: "80% high-fit customers are <$5M (Fish)"
+        flag: "ICP_REVENUE_MISMATCH - validate in Checkpoint 1"
+
+      - foundation_claim: "Melio pricing is $90/mo"
+        transcript_evidence: "Customer says Melio is $49/mo now"
+        flag: "COMPETITIVE_PRICING_OUTDATED - update foundation"
+
+      - foundation_claim: "QuickBooks integration is advantage"
+        transcript_pattern: "Competitors also have QB integration"
+        flag: "DIFFERENTIATION_WEAK - positioning needs update"
+
+  enrichment_types:
+    quantification:
+      when: "Transcript provides metrics for foundation claims"
+      example:
+        foundation: "Payment processing fees are pain point"
+        transcript: "$2.4K fees on $20K margin = 12% impact"
+        action: "Add quantification to foundation pain point node"
+
+    frequency_validation:
+      when: "Transcript revalidates foundation pattern"
+      example:
+        foundation: "QuickBooks integration is critical"
+        transcript: "Customer #47 also requires QB sync"
+        action: "Increment frequency, update to validated/canonical"
+
+    persona_mapping:
+      when: "Transcript links foundation concept to specific persona"
+      example:
+        foundation: "Net terms extension value prop"
+        transcript: "Cash-Savvy Seller persona requests net terms"
+        action: "Add persona wiki-link to foundation node"
+
+iterative_processing_flow:
+  description: "How context accumulates progressively across transcript batches"
+
+  phase_0_foundation_seeding:
+    agent: "Foundation_Seeder"
+    input: "68 raw_context documents"
+    output: "20-30 foundation nodes in 00_foundation/"
+    node_status: "baseline"
+    confidence: "medium (5-6)"
+    timing: "ONE-TIME at start, before transcripts"
+
+  phase_1_initial_batch:
+    agent: "6 Dimensional Extractors + Node_Synthesizer"
+    input: "First 10-20 transcripts"
+    operations:
+      - "Extract WHO/WHAT/WHY/HOW/WHERE_WHEN/META per transcript"
+      - "Node Synthesizer: CREATE new nodes for novel patterns (status: emergent)"
+      - "Node Synthesizer: UPDATE existing foundation nodes with validation signals"
+      - "Taxonomy incremented for all patterns"
+    output: "30-50 new customer nodes + foundation enrichment"
+
+  phase_2_continuous_processing:
+    agent: "6 Dimensional Extractors + Node_Synthesizer (per transcript)"
+    operations:
+      - "Check taxonomy for existing patterns BEFORE extraction"
+      - "UPDATE existing nodes (increment freq, append evidence)"
+      - "CREATE only if novel pattern"
+      - "Status progression (emergent → validated as freq increases)"
+
+    context_weaver_checkpoints:
+      frequency: "Every 10-20 transcripts"
+      operations:
+        - "Build wiki-links between foundation ↔ customer nodes"
+        - "Update foundation validation status (baseline → validating → validated)"
+        - "Flag contradictions"
+        - "Calculate confidence scores"
+        - "Generate synthesis rollup if threshold reached"
+
+  phase_3_checkpoint_validation:
+    agent: "Validation_Analyst"
+    timing: "After sample batch (10-20 transcripts), after full corpus (165 transcripts)"
+    operations:
+      - "Measure pattern revalidation rate"
+      - "Assess new discovery rate"
+      - "Check quality metrics"
+      - "Make GO/NO-GO/REFINE decision"
+
+  intelligence_compounding:
+    description: "How knowledge graph becomes richer over time"
+    iteration_1: "Thin nodes, sparse connections, mostly emergent status"
+    iteration_10: "Nodes getting evidence accumulation, some validated status"
+    iteration_50: "Rich nodes, many wiki-links, validated/canonical mix"
+    iteration_165: "Comprehensive graph, canonical patterns dominant, synthesis complete"
+
+# ==============================================================================
+# WHO DIMENSION: Personas, Company Profiles, Buyer Characteristics
+# ==============================================================================
+
+who:
+  target_personas:
+    - name: "Payment Upgraders - Business Owner"
+      priority: 1
+      description: "Small business owner focused on saving money and speeding up payments"
+      decision_authority: "Final decision maker"
+      time_to_close: "1-3 days"
+      revenue_band: "Under $50M"
+      employee_count: "2-100"
+      strategic_fit_weight: 9
+      validation_status: "validated"
+      evidence_source: "ICP Summary Green tier"
+
+    - name: "Cash-Savvy Sellers - Business Owner/Controller"
+      priority: 1
+      description: "Small business looking for full-service solution to extend and collect payments without cashflow risk"
+      decision_authority: "Owner or Controller/Accounting Manager"
+      time_to_close: "1-3 weeks"
+      revenue_band: "Under $50M"
+      employee_count: "2-100"
+      strategic_fit_weight: 9
+      validation_status: "validated"
+      evidence_source: "ICP Summary Green tier"
+
+    - name: "Full Stack Automators - CFO/VP Finance"
+      priority: 2
+      description: "Mid-market businesses using Nickel to supercharge existing credit department"
+      decision_authority: "CFO, VP of Finance, VP of Credit, potentially COO/VP of Sales"
+      time_to_close: "2-6 months"
+      revenue_band: "Under $250M"
+      employee_count: "Up to 500"
+      strategic_fit_weight: 7
+      validation_status: "validated"
+      evidence_source: "ICP Summary Yellow tier"
+
+    - name: "Accounting Firm Buyer"
+      priority: 1
+      description: "Accounting firm managing payments for 100+ clients (multiplier effect)"
+      decision_authority: "Firm principal or operations manager"
+      time_to_close: "Unknown"
+      revenue_band: "Unknown"
+      employee_count: "10-50"
+      strategic_fit_weight: 10
+      validation_status: "needs_validation"
+      evidence_source: "Iteration 1 discovery - single example (Hardy Butler)"
+      notes: "CRITICAL: Validate in sample batch - 150x client multiplier hypothesis"
+
+  icp_firmographic_criteria:
+    industry_primary:
+      - name: "Building Materials"
+        priority: 1
+        subcategories: ["Windows", "Doors", "Lighting", "Millwork", "Kitchen & Bath Fixtures", "Pre-built materials", "Specialty materials", "Custom materials"]
+        strategic_fit_weight: 10
+
+    industry_secondary:
+      - name: "Construction & Trades"
+        priority: 1
+        subcategories: ["General Contractors", "Electrical", "Plumbing", "HVAC", "Roofing", "Concrete & Masonry", "Carpentry", "Painting", "Flooring", "Landscaping"]
+        strategic_fit_weight: 9
+
+      - name: "Manufacturing"
+        priority: 2
+        subcategories: ["Metal Fabrication", "Building Products", "Custom Manufacturing", "Wood Products", "Industrial Equipment"]
+        strategic_fit_weight: 8
+
+      - name: "Wholesale & Distribution"
+        priority: 1
+        subcategories: ["Building Materials", "Electrical Supplies", "Plumbing Supplies", "HVAC Equipment", "Industrial Supplies"]
+        strategic_fit_weight: 9
+
+      - name: "Transportation & Logistics"
+        priority: 2
+        subcategories: ["Trucking & Freight", "Specialized Transport", "Warehousing"]
+        strategic_fit_weight: 7
+
+      - name: "Large-Ticket B2B Services"
+        priority: 2
+        subcategories: ["Equipment Rental", "Heavy Equipment Services", "Event Services"]
+        strategic_fit_weight: 7
+
+    revenue_qualification:
+      - tier: "Shrimp"
+        range: "<$1M"
+        priority: 3
+        strategic_fit_weight: 3
+        notes: "Low priority unless ICP industry"
+
+      - tier: "Fish"
+        range: "$1M-$5M"
+        priority: 2
+        strategic_fit_weight: 6
+        notes: "Medium priority, evaluate ICP fit"
+
+      - tier: "Whale"
+        range: "$5M-$25M"
+        priority: 1
+        strategic_fit_weight: 9
+        notes: "High priority, sweet spot for Payment Upgraders and Cash-Savvy Sellers"
+
+      - tier: "Kraken"
+        range: "$25M+"
+        priority: 1
+        strategic_fit_weight: 8
+        notes: "High priority, potential Full Stack Automators"
+
+    employee_count:
+      sweet_spot: "2-100 employees"
+      maximum: "500 employees"
+      accounting_team_size: "<10 staff (large teams need ERP integrations Nickel doesn't provide)"
+      notes: "Small headcount moving large money - CRITICAL fit indicator"
+      evidence_source: "Ivan call transcript 2025-10-30"
+
+    margin_profile:
+      ideal: "Low margins (<30%) + large transactions"
+      reasoning: "3% CC fee has 5-10x impact on low-margin businesses"
+      example: "$80K cost, $100K sale, $20K margin → $2.4K fee = 12% of margin"
+      anti_fit: "High-margin services (100% margins on time) where 3% fee is negligible"
+      strategic_fit_weight: 9
+      evidence_source: "Ivan call transcript 2025-10-30"
+      notes: "CRITICAL: Tight margins make payment fee savings highly valuable"
+
+    transaction_profile:
+      ideal: "Large, negotiated B2B transactions"
+      transaction_type: "Sales-led, invoice-based (not shopping cart)"
+      min_transaction_size: "$5K+ average (needs validation)"
+      anti_fit: "E-commerce, high-volume low-value transactions"
+      evidence_source: "Ivan call transcript 2025-10-30"
+
+    business_model_constraints:
+      revenue_dependency: "Credit card transaction fees"
+      ar_customers:
+        fit: "STRONG - customers naturally choose payment method (mix of CC + ACH)"
+        revenue_potential: "High - some customers will pay by CC"
+        strategic_fit_weight: 10
+      ap_customers:
+        fit: "BINARY - either all CC (good) or all ACH (no revenue)"
+        revenue_potential: "High if CC, zero if ACH-only"
+        strategic_fit_weight: 5
+        notes: "ACH-only AP customers = not anti-persona but NOT IDEAL (no current revenue)"
+      evidence_source: "Ivan call transcript 2025-10-30"
+      notes: "CRITICAL business model constraint - must generate CC transaction revenue"
+
+    location:
+      primary: "1-5 warehouse/showroom locations"
+      market_reach: "Regional or national buyers"
+      project_types: ["Single family", "Multi-family", "Small commercial", "Non-industrial"]
+
+  priority_tier_mapping:
+    tier_1:
+      description: "Any ICP company OR non-ICP Whale/Kraken"
+      criteria:
+        - "ICP industry match (Building Materials, Construction, Manufacturing, Wholesale/Distribution)"
+        - "OR revenue ≥$5M (Whale/Kraken)"
+      strategic_fit_weight: 9
+
+    tier_2:
+      description: "Non-ICP Fish"
+      criteria:
+        - "Revenue $1-5M"
+        - "NOT in ICP industry"
+      strategic_fit_weight: 5
+
+    tier_3:
+      description: "Non-ICP Shrimp"
+      criteria:
+        - "Revenue <$1M"
+        - "NOT in ICP industry"
+      strategic_fit_weight: 2
+
+  anti_personas:
+    - type: "High-Margin Professional Services"
+      reason: "100% margins on time - 3% CC fee is negligible, not pain point"
+      disqualify: true
+      strategic_fit_weight: 0
+      example: "Consulting, coaching, freelance services with small transactions"
+      evidence_source: "Ivan call transcript 2025-10-30"
+      notes: "CRITICAL: Tight margins are ICP requirement"
+
+    - type: "E-commerce / Shopping Cart Businesses"
+      reason: "Need shopping cart experience, not sales-led invoicing"
+      disqualify: true
+      strategic_fit_weight: 0
+      evidence_source: "Ivan call transcript 2025-10-30"
+      notes: "Must be negotiated transactions with invoices"
+
+    - type: "Large Accounting Teams (ERP-dependent)"
+      reason: "Need ERP integrations that Nickel doesn't provide"
+      disqualify: true
+      strategic_fit_weight: 1
+      example: "Companies with 10+ accounting staff, complex ERP systems"
+      evidence_source: "Ivan call transcript 2025-10-30"
+      notes: "Too complex for Nickel's current product"
+
+    - type: "ACH-Only AP Customers"
+      reason: "Want to pay all bills via free ACH - no CC transaction revenue for Nickel"
+      disqualify: false
+      strategic_fit_weight: 2
+      evidence_source: "Ivan call transcript 2025-10-30"
+      notes: "NOT anti-persona but NOT IDEAL - future product upsell potential, pay vendors who could be customers"
+
+    - type: "Retail Stores"
+      reason: "Consumer-facing, not B2B"
+      disqualify: true
+      strategic_fit_weight: 0
+
+    - type: "Software Companies"
+      reason: "Not physical goods or project-based"
+      disqualify: true
+      strategic_fit_weight: 0
+
+    - type: "Healthcare Providers"
+      reason: "Regulatory complexity, not ICP"
+      disqualify: true
+      strategic_fit_weight: 0
+
+    - type: "Restaurants"
+      reason: "Consumer-facing, low transaction value"
+      disqualify: true
+      strategic_fit_weight: 0
+
+  icp_signal_keywords:
+    high_priority: ["wholesale", "distributor", "trade account", "net terms", "accounts receivable", "invoice", "projects", "contractor", "supplier", "building materials"]
+    medium_priority: ["RFQ", "quote", "ACH", "wire", "check", "installations", "industrial", "commercial", "trucking", "logistics"]
+    low_priority: ["fabrication", "cabinet", "warehouse"]
+
+# ==============================================================================
+# WHAT DIMENSION: Pain Points, Use Cases, Product Fit Signals
+# ==============================================================================
+
+what:
+  critical_pain_points:
+    - name: "Manual Credit Decisions & Lien Management"
+      priority: 1
+      description: "Manually making credit decisions, managing lien rights, collecting payments"
+      severity: "CRITICAL"
+      frequency: "Unknown - needs validation"
+      strategic_fit_weight: 10
+      evidence_source: "Nickel core positioning statement"
+      validation_status: "validated"
+
+    - name: "Check Payment Hassles"
+      priority: 1
+      description: "Customers still paying with checks - slow, hard to reconcile, prone to fraud"
+      severity: "HIGH"
+      frequency: "Unknown - needs validation"
+      strategic_fit_weight: 9
+      evidence_source: "ICP Summary - Payment Upgraders pain"
+      validation_status: "validated"
+
+    - name: "Payment Processing Fees"
+      priority: 1
+      description: "Losing 1-3% of margins on credit card and ACH processing fees"
+      severity: "HIGH"
+      frequency: "4 mentions (Iteration 1)"
+      strategic_fit_weight: 9
+      evidence_source: "ICP Summary + Iteration 1 taxonomy"
+      validation_status: "validated"
+
+    - name: "Customers Asking for Net Terms"
+      priority: 1
+      description: "Customers requesting payment terms but company lacks credit department"
+      severity: "CRITICAL"
+      frequency: "Unknown - needs validation"
+      strategic_fit_weight: 10
+      evidence_source: "ICP Summary - Cash-Savvy Sellers challenge"
+      validation_status: "validated"
+
+    - name: "Manual Cash Application"
+      priority: 2
+      description: "Manual reconciliation of payments to invoices"
+      severity: "MEDIUM"
+      frequency: "Unknown - needs validation"
+      strategic_fit_weight: 7
+      evidence_source: "ICP Summary - Full Stack Automators"
+      validation_status: "validated"
+
+    - name: "Invoice and Check Fraud"
+      priority: 1
+      description: "Vulnerability to payment fraud"
+      severity: "CRITICAL"
+      frequency: "Unknown - needs validation"
+      strategic_fit_weight: 9
+      evidence_source: "ICP Summary"
+      validation_status: "validated"
+
+    - name: "Lien Rights Management"
+      priority: 2
+      description: "Only maintaining lien rights on 20-30% of projects"
+      severity: "HIGH"
+      frequency: "Unknown - needs validation"
+      strategic_fit_weight: 8
+      evidence_source: "ICP Summary - Full Stack Automators"
+      validation_status: "validated"
+
+  validated_use_cases:
+    - name: "AR Automation + Processing"
+      priority: 1
+      description: "Automate accounts receivable with card and bank payment processing"
+      icp_fit: ["Payment Upgraders", "Cash-Savvy Sellers", "Full Stack Automators"]
+      strategic_fit_weight: 10
+      validation_status: "validated"
+      evidence_source: "ICP Summary - all 3 tiers"
+
+    - name: "Extend Payment Terms (Net 30-90)"
+      priority: 1
+      description: "Give customers net terms while getting paid immediately"
+      icp_fit: ["Cash-Savvy Sellers"]
+      strategic_fit_weight: 10
+      validation_status: "validated"
+      evidence_source: "ICP Summary - Cash-Savvy Sellers solution"
+
+    - name: "QuickBooks Integration"
+      priority: 1
+      description: "Seamless integration with QuickBooks Online"
+      icp_fit: ["All personas"]
+      strategic_fit_weight: 10
+      frequency: "4 of 4 transcripts (100% in Iteration 1)"
+      validation_status: "validated"
+      evidence_source: "Iteration 1 taxonomy + ICP Summary competitive mention"
+      notes: "CRITICAL BLOCKER - universal requirement"
+
+    - name: "Digital Credit Application & Underwriting"
+      priority: 2
+      description: "Scalable underwriting and credit app process"
+      icp_fit: ["Full Stack Automators"]
+      strategic_fit_weight: 8
+      validation_status: "validated"
+      evidence_source: "ICP Summary - Full Stack Automators solution"
+
+    - name: "Lien Management Automation"
+      priority: 2
+      description: "Automate lien filing and management"
+      icp_fit: ["Full Stack Automators"]
+      strategic_fit_weight: 8
+      validation_status: "validated"
+      evidence_source: "ICP Summary - Full Stack Automators solution"
+
+  product_fit_signals:
+    strong_fit:
+      - "Mention of net terms, trade credit, accounts receivable"
+      - "QuickBooks Online user"
+      - "Building materials or construction industry"
+      - "Multiple invoices per customer per month"
+      - "Revenue $1M+"
+
+    moderate_fit:
+      - "Check or wire payments currently"
+      - "Manual invoicing process"
+      - "Payment processing fees concern"
+      - "5-50 employees"
+
+    weak_fit:
+      - "Stripe or Square as primary payment processor"
+      - "Consumer-facing business"
+      - "High-volume, low-value transactions"
+      - "SaaS or digital products"
+
+# ==============================================================================
+# WHY DIMENSION: Objections, Competitive Threats, Motivations
+# ==============================================================================
+
+why:
+  competitive_threats:
+    tier_1_direct:
+      - name: "Melio"
+        priority: 1
+        category: "AR Automation"
+        positioning: "Industry-agnostic, larger company focus"
+        pricing: "$90/month (vs Nickel $35-45)"
+        strategic_fit_weight: 10
+        validation_status: "needs_validation"
+        evidence_source: "ICP Summary + 08/29 GTM update mention + Iteration 1 (Relay confusion?)"
+        notes: "CRITICAL: Validate competitive win/loss, customer satisfaction, differentiation"
+
+      - name: "Bill.com"
+        priority: 1
+        category: "AR Automation"
+        positioning: "Industry-agnostic, enterprise focus"
+        pricing: "Unknown"
+        strategic_fit_weight: 9
+        validation_status: "validated"
+        evidence_source: "ICP Summary"
+
+    tier_2_adjacent:
+      - name: "Invoice Factoring (Fundbox, AltLine, Billd, SlopePay, ResolvePay)"
+        priority: 2
+        category: "Working Capital"
+        positioning: "Cash advance for invoices, not payment platform"
+        pricing: "Unknown"
+        strategic_fit_weight: 7
+        validation_status: "validated"
+        evidence_source: "ICP Summary"
+
+      - name: "Traditional Invoice Factoring (nFusion, CapitalPlus, Riviera Finance)"
+        priority: 2
+        category: "Working Capital"
+        positioning: "Established factoring, high rates, friction-heavy"
+        pricing: "Unknown"
+        strategic_fit_weight: 6
+        validation_status: "validated"
+        evidence_source: "ICP Summary"
+
+      - name: "Legacy Credit Card Processors (PaymentDepot, Authorize.net, Cardpointe)"
+        priority: 2
+        category: "Payment Processing"
+        positioning: "Processing only, no AR automation or credit"
+        pricing: "1-3% fees"
+        strategic_fit_weight: 6
+        validation_status: "validated"
+        evidence_source: "ICP Summary"
+
+    tier_3_point_solutions:
+      - name: "Digital Credit Application (BillTrust, Nuvo)"
+        priority: 3
+        category: "Credit Management"
+        positioning: "Credit app only, not full platform"
+        pricing: "Unknown"
+        strategic_fit_weight: 5
+        validation_status: "validated"
+        evidence_source: "ICP Summary"
+
+      - name: "Lien Management (LevelSet, Handle)"
+        priority: 3
+        category: "Lien Filing"
+        positioning: "Lien management only, not payment platform"
+        pricing: "Unknown"
+        strategic_fit_weight: 5
+        validation_status: "validated"
+        evidence_source: "ICP Summary"
+
+    tier_4_status_quo:
+      - name: "QuickBooks Online"
+        priority: 1
+        category: "Status Quo"
+        positioning: "Accounting software, basic invoicing"
+        pricing: "$30-200/month"
+        strategic_fit_weight: 8
+        validation_status: "validated"
+        evidence_source: "ICP Summary"
+        notes: "PRIMARY STATUS QUO - must integrate seamlessly"
+
+      - name: "Bank Line of Credit"
+        priority: 2
+        category: "Status Quo"
+        positioning: "Traditional working capital"
+        pricing: "Unknown"
+        strategic_fit_weight: 6
+        validation_status: "validated"
+        evidence_source: "ICP Summary"
+
+      - name: "Traditional Banks"
+        priority: 2
+        category: "Status Quo"
+        positioning: "Basic business banking"
+        pricing: "Unknown"
+        strategic_fit_weight: 5
+        validation_status: "validated"
+        evidence_source: "Iteration 1 taxonomy"
+
+  common_objections:
+    - name: "Volume Threshold Too High"
+      priority: 1
+      description: "Customer doesn't meet minimum payment volume requirements"
+      frequency: "6 mentions (Iteration 1 - consolidated)"
+      severity: "HIGH"
+      strategic_fit_weight: 9
+      validation_status: "validated"
+      evidence_source: "Iteration 1 taxonomy consolidation"
+      handling_strategy: "Validate in sample batch - is $2M threshold still relevant?"
+
+    - name: "AR Customers Won't Pay by Card"
+      priority: 1
+      description: "Belief that B2B customers won't use credit cards"
+      frequency: "2 mentions (Iteration 1)"
+      severity: "HIGH"
+      strategic_fit_weight: 8
+      validation_status: "needs_validation"
+      evidence_source: "Iteration 1 taxonomy"
+
+    - name: "Business Model Sustainability Concerns"
+      priority: 2
+      description: "Skepticism about free tier economics"
+      frequency: "Unknown - needs validation"
+      severity: "MEDIUM"
+      strategic_fit_weight: 7
+      validation_status: "needs_validation"
+      evidence_source: "Iteration 1 discovery (Hardy Butler)"
+
+    - name: "Existing Solution Satisfaction"
+      priority: 1
+      description: "Happy with current solution (e.g., Melio, Relay Financial)"
+      frequency: "Unknown - needs validation"
+      severity: "CRITICAL"
+      strategic_fit_weight: 9
+      validation_status: "needs_validation"
+      evidence_source: "Iteration 1 discovery (Jeff Streich - Relay)"
+      notes: "CRITICAL: Competitive displacement challenge"
+
+    - name: "Compliance Process Opacity"
+      priority: 1
+      description: "Generic denial emails with no resolution path"
+      frequency: "1 mention (Iteration 1)"
+      severity: "CRITICAL"
+      strategic_fit_weight: 10
+      validation_status: "needs_validation"
+      evidence_source: "Iteration 1 discovery (Frank Delbrouck)"
+      notes: "OPERATIONAL ISSUE - causes churn and referral damage"
+
+  buyer_motivations:
+    cost_savings:
+      - "Reduce payment processing fees (1-3% savings)"
+      - "Eliminate check fraud losses"
+      - "Reduce manual labor costs"
+      priority: 1
+      strategic_fit_weight: 9
+
+    operational_efficiency:
+      - "Automate manual processes (invoicing, reconciliation)"
+      - "Reduce payment settlement times"
+      - "Centralized payment platform"
+      priority: 1
+      strategic_fit_weight: 9
+
+    growth_enablement:
+      - "Offer net terms without credit department"
+      - "Accept more customers without risk"
+      - "Scale without adding headcount"
+      priority: 1
+      strategic_fit_weight: 10
+
+    risk_mitigation:
+      - "Payment protection (fraud, non-payment)"
+      - "Lien rights management"
+      - "Credit vetting automation"
+      priority: 2
+      strategic_fit_weight: 8
+
+# ==============================================================================
+# HOW DIMENSION: Product Requirements, Feature Priorities
+# ==============================================================================
+
+how:
+  critical_product_requirements:
+    - name: "QuickBooks Online Integration"
+      priority: 1
+      description: "Seamless two-way sync with QuickBooks Online"
+      blocker: true
+      strategic_fit_weight: 10
+      validation_status: "validated"
+      evidence_source: "100% mention rate in Iteration 1 + ICP Summary"
+      notes: "UNIVERSAL REQUIREMENT - no exceptions"
+
+    - name: "Free ACH Payments"
+      priority: 1
+      description: "Zero-fee ACH payment processing"
+      blocker: false
+      strategic_fit_weight: 9
+      validation_status: "validated"
+      evidence_source: "08/29 GTM update + positioning"
+
+    - name: "Credit Card Processing"
+      priority: 1
+      description: "Accept credit card payments with competitive rates"
+      blocker: false
+      strategic_fit_weight: 9
+      validation_status: "validated"
+      evidence_source: "ICP Summary + 08/29 GTM (18.2% core customer usage)"
+
+    - name: "AR Automation"
+      priority: 1
+      description: "Automated invoice sending, payment reminders, reconciliation"
+      blocker: false
+      strategic_fit_weight: 10
+      validation_status: "validated"
+      evidence_source: "ICP Summary - all 3 tiers"
+
+  high_priority_features:
+    - name: "Net Terms Extension (30-90 days)"
+      priority: 1
+      description: "Platform extends credit to customers, pays supplier immediately"
+      icp_fit: ["Cash-Savvy Sellers", "Full Stack Automators"]
+      strategic_fit_weight: 10
+      validation_status: "validated"
+
+    - name: "Apple Pay"
+      priority: 2
+      description: "Apple Pay payment option"
+      icp_fit: ["All personas"]
+      strategic_fit_weight: 7
+      validation_status: "validated"
+      evidence_source: "08/29 GTM - live to top customers"
+
+    - name: "International Payments"
+      priority: 2
+      description: "Cross-border payment processing"
+      icp_fit: ["Kraken tier"]
+      strategic_fit_weight: 6
+      validation_status: "in_development"
+      evidence_source: "08/29 GTM - coming soon"
+
+  feature_gaps_to_validate:
+    - "W-9/1099 automation (Iteration 1 mention)"
+    - "Multi-client dashboard (accounting firm use case)"
+    - "Volume discount tiers"
+    - "White-label capabilities"
+
+# ==============================================================================
+# WHERE_WHEN DIMENSION: Journey Stage, Discovery Triggers
+# ==============================================================================
+
+where_when:
+  conversion_funnel_stages:
+    - stage: "Aware"
+      description: "Marketing touchpoint, no contact info yet"
+      win_probability: "N/A"
+
+    - stage: "Cold"
+      description: "Outbound prospecting, contact obtained"
+      win_probability: "N/A"
+
+    - stage: "Warm Lead"
+      description: "Familiar with Nickel, basic firmographic qualification"
+      win_probability: "N/A"
+      qualification_level: "Unknown ICP fit (Green/Yellow/Red)"
+
+    - stage: "MQL"
+      description: "Responded positively to outbound/inbound"
+      win_probability: "N/A"
+      qualification_level: "Unknown ICP fit"
+
+    - stage: "SQL"
+      description: "Discovery call scheduled, problem-aware"
+      win_probability: "N/A"
+      qualification_level: "Unknown ICP fit"
+
+    - stage: "Opportunity - Demo Scheduled"
+      description: "Personalized demo scheduled"
+      win_probability: "25%"
+      qualification_level: "ICP fit confirmed (Green/Yellow/Red)"
+
+    - stage: "Opportunity - Demo Attended"
+      description: "Demo attended, opportunity sized (ACV, timeline, decision steps)"
+      win_probability: "50%"
+
+    - stage: "Opportunity - Trial Invitation Sent"
+      description: "Registration link sent"
+      win_probability: "75%"
+
+    - stage: "Opportunity - Trial Started"
+      description: "Registered and evaluating product"
+      win_probability: "80%"
+
+    - stage: "Opportunity - Review & Q&A"
+      description: "Trial ended, needs more info"
+      win_probability: "80%"
+
+    - stage: "Customer"
+      description: "Signed up, 3+ transactions per month"
+      win_probability: "100%"
+
+    - stage: "Evangelist"
+      description: "Meets LIR (50% of receivables on Nickel), ready for upsell/referral"
+      win_probability: "100%"
+
+  discovery_triggers:
+    high_intent:
+      - "Customers actively asking for net terms"
+      - "Recent fraud incident (check or invoice fraud)"
+      - "Received large order that requires payment terms"
+      - "Outgrowing current payment processor"
+      - "QuickBooks adoption (within last 6 months)"
+
+    medium_intent:
+      - "Hiring accounting/finance staff"
+      - "Frustrated with check reconciliation"
+      - "Comparing payment processors"
+      - "Payment processing fees eating margins"
+
+    low_intent:
+      - "General business banking research"
+      - "Content marketing touchpoint only"
+
+  time_to_close:
+    payment_upgraders: "1-3 days"
+    cash_savvy_sellers: "1-3 weeks"
+    full_stack_automators: "2-6 months"
+    accounting_firms: "Unknown - needs validation"
+
+# ==============================================================================
+# META DIMENSION: Market Context, Segment Insights
+# ==============================================================================
+
+meta:
+  market_segments:
+    primary_vertical:
+      name: "Building Materials & Construction"
+      description: "Building supply companies, contractors, manufacturers serving construction projects"
+      size: "Unknown - needs market sizing"
+      priority: 1
+      strategic_fit_weight: 10
+
+    secondary_verticals:
+      - name: "Wholesale & Distribution"
+        description: "Industrial supplies, electrical, plumbing, HVAC distributors"
+        priority: 2
+        strategic_fit_weight: 8
+
+      - name: "Transportation & Logistics"
+        description: "Trucking, freight, warehousing serving construction/industrial"
+        priority: 2
+        strategic_fit_weight: 7
+
+      - name: "Large-Ticket B2B Services"
+        description: "Equipment rental, heavy equipment, event services"
+        priority: 2
+        strategic_fit_weight: 7
+
+  market_trends:
+    - trend: "ACH adoption increasing"
+      impact: "Positive - aligns with Nickel's free ACH positioning"
+      evidence: "08/29 GTM - ACH content driving 150+ clicks/week"
+
+    - trend: "LLM citation increasing"
+      impact: "Positive - Nickel being cited in ChatGPT/Perplexity for ACH searches"
+      evidence: "08/29 GTM - AI search visibility growing"
+
+    - trend: "Credit card usage in B2B"
+      impact: "Positive - 18.2% of core customers using credit cards (growing)"
+      evidence: "08/29 GTM - CC adoption at 13.6% overall, 18.2% core"
+
+    - trend: "AR product growth"
+      impact: "Positive - AR represents 36.7% of TPV overall, 49.3% for core customers"
+      evidence: "08/29 GTM - AR leadership established"
+
+  key_metrics:
+    leading_indicator_of_retention:
+      metric: "Customer receives 50% of monthly receivables on Nickel"
+      priority: 1
+      strategic_fit_weight: 10
+      evidence_source: "ICP Summary"
+
+    conversion_benchmarks:
+      - stage: "Demo Scheduled → Demo Attended"
+        win_rate: "Unknown - needs validation"
+
+      - stage: "Demo Attended → Trial Started"
+        win_rate: "Unknown - needs validation"
+
+      - stage: "Trial Started → Customer"
+        win_rate: "Unknown - needs validation"
+
+    august_2025_performance:
+      tpv_total: "$35.2M"
+      tpv_core: "$26.2M (+4.98% MoM)"
+      ar_percentage: "36.7% overall, 49.3% core"
+      cc_adoption: "13.6% overall, 18.2% core"
+      deals_closed: "$86M in company revenue across 27 accounts"
+      evidence_source: "08/29 GTM Build Update"
+
+# ==============================================================================
+# STRATEGIC_FIT SCORING CRITERIA
+# ==============================================================================
+
+strategic_fit_scoring:
+  version: "1.0"
+  scale: "0-10 (0=no fit, 10=perfect fit)"
+
+  calculation_method:
+    description: "Weighted composite score across WHO/WHAT/WHY/HOW/WHERE_WHEN/META dimensions"
+    weights:
+      who_persona_match: 0.25
+      what_pain_severity: 0.20
+      why_competitive_position: 0.15
+      how_product_readiness: 0.15
+      where_when_stage: 0.10
+      meta_market_fit: 0.15
+
+  scoring_rubric:
+    persona_match:
+      score_10: "Tier 1 ICP (Building Materials + Whale/Kraken) + tight margins (<30%) + small headcount (<10 accounting) + sales-led transactions"
+      score_8_9: "Tier 1 ICP (Building Materials + Fish) + tight margins OR small headcount + sales-led"
+      score_6_7: "Tier 2 (Non-ICP Fish) with tight margins + sales-led OR Tier 1 Shrimp"
+      score_4_5: "Tier 3 (Non-ICP Shrimp) with pain signals OR missing 1-2 key constraints (margins/headcount/transaction type)"
+      score_0_3: "Anti-persona (high-margin services, e-commerce, large accounting teams, ACH-only AP) or clear disqualifier"
+      notes: "UPDATED with Ivan's constraints: margins, headcount, transaction type are CRITICAL"
+
+    pain_severity:
+      score_10: "Multiple CRITICAL pain points (net terms requests + manual credit + fraud)"
+      score_8_9: "One CRITICAL pain point OR multiple HIGH pain points"
+      score_6_7: "One HIGH pain point OR multiple MEDIUM pain points"
+      score_4_5: "One MEDIUM pain point"
+      score_0_3: "No clear pain points or weak signals"
+
+    competitive_position:
+      score_10: "No competitor mentioned, actively seeking solution"
+      score_8_9: "Using status quo (checks, QuickBooks) but frustrated"
+      score_6_7: "Evaluating Melio/Bill.com but not decided"
+      score_4_5: "Using Melio/Bill.com but has complaints"
+      score_0_3: "Happy with Melio/competitor, no switching intent"
+
+    product_readiness:
+      score_10: "All critical requirements met (QuickBooks + AR automation)"
+      score_8_9: "Most requirements met, minor feature gap"
+      score_6_7: "Core requirements met, significant feature gap (e.g., lien management)"
+      score_4_5: "Major feature gap or blocker present"
+      score_0_3: "Cannot serve with current product"
+
+    journey_stage:
+      score_10: "Trial Started (80% win rate)"
+      score_8_9: "Demo Attended (50% win rate)"
+      score_6_7: "Demo Scheduled (25% win rate)"
+      score_4_5: "SQL (discovery call scheduled)"
+      score_0_3: "Cold/Warm Lead (no engagement yet)"
+
+    market_fit:
+      score_10: "Building Materials + Construction, growing segment"
+      score_8_9: "Wholesale/Distribution or Manufacturing, stable segment"
+      score_6_7: "Transportation/Logistics or Large-Ticket Services"
+      score_4_5: "Adjacent vertical with transferable pain points"
+      score_0_3: "Non-target market (retail, SaaS, consumer)"
+
+  examples:
+    perfect_fit_scenario:
+      description: "$8M building materials distributor, 25 employees, asking for net terms, using QuickBooks, frustrated with checks, evaluating Melio"
+      who_score: 9
+      what_score: 10
+      why_score: 9
+      how_score: 10
+      where_when_score: 7
+      meta_score: 10
+      composite_score: 9.3
+
+    good_fit_scenario:
+      description: "$12M HVAC contractor, 40 employees, high payment processing fees, looking to automate AR"
+      who_score: 8
+      what_score: 8
+      why_score: 8
+      how_score: 10
+      where_when_score: 5
+      meta_score: 9
+      composite_score: 8.0
+
+    moderate_fit_scenario:
+      description: "$800K landscaping company, 8 employees, still using checks but not actively looking to change"
+      who_score: 5
+      what_score: 6
+      why_score: 6
+      how_score: 10
+      where_when_score: 3
+      meta_score: 7
+      composite_score: 5.9
+
+    poor_fit_scenario:
+      description: "$500K retail furniture store, consumer-facing, no B2B sales"
+      who_score: 1
+      what_score: 2
+      why_score: 3
+      how_score: 4
+      where_when_score: 2
+      meta_score: 1
+      composite_score: 2.0
+
+# ==============================================================================
+# VALIDATION FLAGS & NEXT STEPS
+# ==============================================================================
+
+validation_priorities:
+  checkpoint_1_critical:
+    - "Accounting Firm Buyer persona (150x multiplier hypothesis)"
+    - "Melio/Relay competitive displacement (customer satisfaction, pricing, differentiation)"
+    - "Compliance process opacity (operational fix needed)"
+    - "Volume threshold objection (is $2M still relevant?)"
+
+  sample_batch_focus:
+    - "Persona validation: Do Payment Upgraders, Cash-Savvy Sellers, Full Stack Automators appear in transcripts?"
+    - "Pain point frequency: Which pains appear most often?"
+    - "Competitive mentions: Melio, Bill.com, factoring frequency"
+    - "QuickBooks universal requirement confirmation"
+    - "Time to close accuracy by persona"
+
+  full_corpus_analysis:
+    - "Pattern stability: Do high-frequency patterns from Iteration 1 remain high?"
+    - "New pattern discovery: Emergent pains, objections, personas"
+    - "Market segment breakdown: Building Materials vs Construction vs Manufacturing split"
+    - "Win/loss analysis: Competitive displacement success rates"
+
+notes:
+  - "This lens encodes strategic intelligence from 5 critical Nickel documents + Iteration 1 discoveries"
+  - "All dimensional extractors should query this lens for priority guidance and strategic_fit scoring"
+  - "Validation flags indicate areas needing evidence in sample batch before scaling"
+  - "EVIDENCE ATTRIBUTION: All claims cite source files with [VERIFIED] tag"
+  - "Version 1.0 baseline - will evolve as sample batch validates/refutes patterns"

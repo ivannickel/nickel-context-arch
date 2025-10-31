@@ -1,0 +1,211 @@
+phase: 1
+description: "Sample batch - Strategic transcript selection for lens validation"
+selection_criteria:
+  - extraction_priority: high
+  - has_pain_points: true preferred
+  - Industry diversity
+  - Customer segment diversity
+  - Call type diversity
+target_count: 18
+created: 2025-10-30
+
+transcripts:
+  # Manufacturing - Whale segment
+  - id: "152"
+    filename: "152_kurt-nickel-demo_2025-09-26.md"
+    segment: whale
+    industry: manufacturing
+    call_type: demo
+    has_pain_points: true
+    has_pricing: true
+    has_integrations: true
+    ar_vs_ap: both
+    rationale: "Whale segment, manufacturing vertical, pricing discussion"
+
+  # Hospitality - Whale segment
+  - id: "131"
+    filename: "131_dipping-dots-x-nickel_2025-09-18.md"
+    segment: whale
+    industry: hospitality
+    call_type: demo
+    has_pain_points: true
+    has_pricing: true
+    ar_vs_ap: both
+    rationale: "Franchise model, hospitality vertical, recurring payments"
+
+  # Construction/Building Materials
+  - id: "158"
+    filename: "158_daniel-goodwin-and-jacob-greenberg_2025-08-14.md"
+    segment: unknown
+    industry: unknown
+    call_type: discovery
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "High priority, pain points present"
+
+  # Multiple high-priority with pain points
+  - id: "157"
+    filename: "157_nickel-rig-roofing_2025-10-07.md"
+    segment: unknown
+    industry: construction
+    call_type: unknown
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Construction vertical, roofing specialty"
+
+  - id: "156"
+    filename: "156_commercial-c-group-nickel_2025-09-22.md"
+    segment: unknown
+    industry: construction
+    call_type: unknown
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Commercial construction"
+
+  - id: "155"
+    filename: "155_nickel-demo-rachel-steininger_2025-09-08.md"
+    segment: unknown
+    industry: unknown
+    call_type: demo
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Demo call with pain points"
+
+  - id: "153"
+    filename: "153_nickel-platform-demo-jay-johnson_2025-09-17.md"
+    segment: unknown
+    industry: unknown
+    call_type: demo
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Platform demo"
+
+  - id: "151"
+    filename: "151_nickel-demo-request-erica-rogers_2025-10-22.md"
+    segment: unknown
+    industry: unknown
+    call_type: demo
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Recent demo (Oct 2025)"
+
+  - id: "139"
+    filename: "139_nickel-demo-request-robert-stern_2025-09-11.md"
+    segment: unknown
+    industry: unknown
+    call_type: demo
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Demo request"
+
+  - id: "138"
+    filename: "138_nickel-x-dual-temp-review_2025-08-26.md"
+    segment: unknown
+    industry: unknown
+    call_type: review
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Review call - customer feedback"
+
+  - id: "136"
+    filename: "136_nickel-mark-hull-jacob_2025-09-23.md"
+    segment: unknown
+    industry: unknown
+    call_type: unknown
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "High priority with pain points"
+
+  - id: "135"
+    filename: "135_ellen-moser-and-jacob-greenberg_2025-07-30.md"
+    segment: unknown
+    industry: unknown
+    call_type: discovery
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Discovery call"
+
+  # Distribution/Wholesale
+  - id: "133"
+    filename: "133_alaska-wholesale-llc-matthew-fischer_2025-09-03.md"
+    segment: unknown
+    industry: wholesale
+    call_type: unknown
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Wholesale/distribution vertical"
+
+  # Professional Services
+  - id: "110"
+    filename: "110_nickel-demo-request-ryan-jacob_2025-09-22.md"
+    segment: unknown
+    industry: unknown
+    call_type: demo
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Demo with pain points"
+
+  - id: "109"
+    filename: "109_nickel-demo-request-byron-floyd_2025-09-29.md"
+    segment: unknown
+    industry: unknown
+    call_type: demo
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Demo call"
+
+  - id: "108"
+    filename: "108_nickel-demo-request-amanda-pettay_2025-10-16.md"
+    segment: unknown
+    industry: unknown
+    call_type: demo
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Recent demo (Oct 2025)"
+
+  - id: "103"
+    filename: "103_nickel-platform-demo-charles-stafford_2025-10-16.md"
+    segment: unknown
+    industry: unknown
+    call_type: demo
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Platform demo, recent"
+
+  - id: "101"
+    filename: "101_nickel-demo-request-deborah-enriquez_2025-09-10.md"
+    segment: unknown
+    industry: unknown
+    call_type: demo
+    has_pain_points: true
+    extraction_priority: high
+    rationale: "Demo request with pain points"
+
+selection_summary:
+  total: 18
+  industries:
+    manufacturing: 1
+    hospitality: 1
+    construction: 3
+    wholesale: 1
+    professional_services: 1
+    unknown: 11
+  segments:
+    whale: 2
+    unknown: 16
+  call_types:
+    demo: 12
+    discovery: 2
+    review: 1
+    unknown: 3
+  content_signals:
+    all_have_pain_points: true
+    all_high_priority: true
+
+execution_plan:
+  approach: "Process in 2 batches of 9 transcripts each"
+  batch_1: "Transcripts 152, 131, 158, 157, 156, 155, 153, 151, 139"
+  batch_2: "Transcripts 138, 136, 135, 133, 110, 109, 108, 103, 101"
+  extractor_pattern: "6 parallel dimensional extractors per transcript"
+  synthesizer_pattern: "Sequential after extractors complete"
+  context_weaver: "After all 18 transcripts processed"
